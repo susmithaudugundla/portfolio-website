@@ -1,0 +1,27 @@
+body{
+                
+                font-size:0px;
+            }
+            .img1{
+                width:38%;
+                border:2px solid black;
+            }
+            .as{
+                font-weight: 900;
+                font-size: 30px;
+                margin-bottom: 60px;
+                font-family:Arial;
+            }
+            .fam{
+                font-size:16px;
+                font-family: Arial;
+            }
+            .mar{
+                font-size:16px;
+                margin-bottom: 30px;
+            }
+            .left1{
+                display:inline-block;
+                border:2px solid black;
+                width:60%;
+            }
