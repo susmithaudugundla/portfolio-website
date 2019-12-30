@@ -4,7 +4,6 @@ body{
             }
             .img1{
                 width:38%;
-                border:2px solid black;
             }
             .as{
                 font-weight: 900;
@@ -22,6 +21,5 @@ body{
             }
             .left1{
                 display:inline-block;
-                border:2px solid black;
                 width:60%;
             }
