@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
+    <script src="../bootstrap/jquery.min.js"></script>
+    <script src="../bootstrap/popper.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assignment13.css" type="text/css" />
+    <style type="text/css">
+      .logo {
+        filter: invert(100%);
+      }
+
+      .font-size a {
+        font-size: 12px;
+      }
+
+      .padding {
+        padding: 2px;
+        border: 2px solid white;
+      }
+
+      .margin-left {
+        margin-right: 10px;
+        margin-bottom: 100px;
+        margin-top: 30px;
+      }
+
+      .img-fix img {
+        width: 100px;
+        height: auto;
+      }
+
+      .margin-top {
+        margin-top: 10px;
+
+      }
+
+      .hr-line {
+        border-bottom: 2px #f2f2f2;
+      }
+
+      .col-height {
+        height: 400px;
+      }
+
+      .margin {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .align-center {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+      }
+
+      .img-size {
+        width: 96px;
+        height: 96px;
+      }
+
+      .row-height {
+        height: 200px;
+
+
+      }
+
+      .border {
+        border: 2px solid black;
+      }
+
+      .background-grey {
+        background: #f2f2f2;
+      }
+
+      a {
+        color: white;
+      }
+
+      .navbar-light a {
+        color: grey;
+      }
+
+      .white {
+        color: white;
+        border-radius: 5px;
+        border: 2px solid white;
+      }
+
+      .height {
+        height: 50px;
+      }
+
+      .act {
+        border-bottom: 2px solid blue;
+
+      }
+
+      .default-image-box {
+        width: 100px;
+        height: 100px;
+        background: #e6f0ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-collapse">
+      <a class="navbar-brand" href="#">
+        <img style="color:white" src="assets/github-logo.svg" class="logo" width="40" height="30" class="d-inline-block align-top" alt="">
+      </a>
+      <ul class="nav">
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link white" href="#">Sign Up</a>
+        </li>
+        <li>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button></li>
+      </ul>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Why GitHub?
+                </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Enterprise</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+                </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Market Place</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pricing
+                </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search GitHub" aria-label="Search">
+          </form>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign in</a>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link white" href="#">Sign Up</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-light bg-light justify-content-center">
+      <ul class="nav nav-pills d-block d-md-none">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Explore</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+      <ul class="nav nav-pills">
+        <li class="nav-item  d-none d-md-block">
+          <a class="nav-link" href="#">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link act" style="color:black" href="#">Topics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Collections</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="row row-height background-grey">
+      <div class="col-12 align-center">
+        <div>
+          <h2>Topics</h2>
+          <p>Browse popular topics on GitHub</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12 col-md-4 align-center margin">
+          <div class="card">
+            <div class="card-body">
+              <img class="img-size" src="assets/opengl.png"></img>
+              <h5 class="card-title">OpenGL</h5>
+              <p class="card-text">OpenGL is a software interface that allows a programmer to communicate with graphics hardware.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 align-center margin">
+          <div class="card">
+            <div class="card-body">
+              <img class="img-size" src="assets/flask.png"></img>
+              <h5 class="card-title">Flask</h5>
+              <p class="card-text">Flask is a web framework for Python based on the Werkzueg toolkit.<br><br></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 align-center margin">
+          <div class="card">
+            <div class="card-body">
+              <img class="img-size" src="assets/gradle.png"></img>
+              <h5 class="card-title">Gradle</h5>
+              <p class="card-text">Gradle is an open source build tool that helps team build, automate and deliver better software, faster.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top:40px;margin-bottom:20px">
+      <h2>All featured topics</h2>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <div class="row">
+            <div class="col-4 col-md-2 align-center">
+              <div class="default-image-box">
+                <p>#</p>
+              </div>
+            </div>
+            <div class="col-8">
+              <h5>3D</h5>
+              <p>3D modelling is the process of virtually developing the surface and structure of a 3D object.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-4 col-md-2 img-fix align-center">
+              <div class="default-image-box">
+                <p>#</p>
+              </div>
+            </div>
+            <div class="col-8">
+              <h5>Ajax</h5>
+              <p>Ajax is a technique for creating interactive web applications.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-4 col-md-2 img-fix align-center">
+              <div class="default-image-box">
+                <p>#</p>
+              </div>
+            </div>
+            <div class="col-8">
+              <h5>Algorithm</h5>
+              <p>Algorithms are self-contained sequences that carry out a variety of tasks.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-2 col-4 img-fix align-center">
+              <div>
+                <img src="assets/amphp.png"></img>
+              </div>
+            </div>
+            <div class="col-8">
+              <h5>Amp</h5>
+              <p>Amp is a non blocking concurrency framework for PHP.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-2 col-4 img-fix align-center">
+              <div>
+                <img src="assets/android.png"></img>
+              </div>
+            </div>
+            <div class="col-8">
+              <h5>Android</h5>
+              <p>Android is an operating system built by Google designed for mobile devices.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-2 col-4 img-fix align-center">
+              <div>
+                <img src="assets/angular.png"></img>
+              </div>
+            </div>
+            <div class="col-8">
+              <h5>Angular</h5>
+              <p>Angular is an open source web application platform.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-2 col-4 img-fix text-align">
+              <div>
+                <img src="assets/ansible.png"></img>
+              </div>
+            </div>
+
+            <div class="col-8">
+              <h5>Ansible</h5>
+              <p>Ansible is a simple and powerful automation engine.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-4 col-md-2 align-center">
+              <div class="default-image-box">
+                <p>#</p>
+              </div>
+            </div>
+            <div class="col-8">
+              <h5>API</h5>
+              <p>An API (Application Programming Interface) is a collection of protocols and subroutines for building software.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-2 col-4 img-fix text-align">
+              <div>
+                <img src="assets/arduino.png"></img>
+              </div>
+            </div>
+
+            <div class="col-8">
+              <h5>Arduino</h5>
+              <p>Arduino is an open source hardware and software company and maker community.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-2 col-4 img-fix text-align">
+              <div>
+                <img src="assets/aspnet.png"></img>
+              </div>
+            </div>
+            <div class="col-8">
+              <h5>ASP.NET</h5>
+              <p>ASP.NET is a web framework for building modern web apps and services.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-2 col-4 img-fix text-align">
+              <div>
+                <img src="assets/atom.png"></img>
+              </div>
+            </div>
+
+            <div class="col-8">
+              <h5>Atom</h5>
+              <p>Atom is a open source text editor built with web technologies.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-2 col-4 img-fix text-align">
+              <div>
+                <img src="assets/awesome.png"></img>
+              </div>
+            </div>
+
+            <div class="col-8">
+              <h5>Awesome Lists</h5>
+              <p>An awesome list is a list of awesome things curated by the community.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-2 col-4 img-fix text-align">
+              <div>
+                <img src="assets/aws.png"></img>
+              </div>
+            </div>
+
+            <div class="col-8">
+              <h5>Amazon Web Services</h5>
+              <p>Amazon Web Services provides on-demand cloud computing platforms on a subscription basis.</p>
+              <button type="button" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-md-2 col-4 img-fix text-align">
+              <div>
+                <img src="assets/azure.png"></img>
+              </div>
+            </div>
+
+            <div class="col-8">
+              <h5>Azure</h5>
+              <p>Azure is a cloud computing services created by Microsoft.</p>
+              <button type="buttont" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-4 col-md-2 align-center">
+              <div class="default-image-box">
+                <p>#</p>
+              </div>
+            </div>
+            <div class="col-8">
+              <h5>Mobile</h5>
+              <p>Mobile apps, mobile OS, mobile databases, & mobile testing frameworks.</p>
+              <button type="button" class="btn btn-sm d-block d-md-none"><img src="assets/star.svg">Star</img></button>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <button type="button" class="btn btn-sm"><img src="assets/star.svg">Star</img></button>
+            </div>
+          </div>
+          <hr>
+
+        </div>
+
+
+        <div class="col-lg-3 d-none d-lg-block font-size">
+          <div class="container">
+            <h5>Popular topics</h5>
+            <div>
+              <p></p>
+            </div>
+          </div>
+          <a style="color:blue" class="background-grey margin-left padding">react</a>
+          <a style="color:blue" class="background-grey margin-left padding">java script</a>
+          <a style="color:blue" class="background-grey margin-left padding">css</a>
+          <div class="d-none d-md-block">
+            <p></p>
+          </div>
+          <a style="color:blue" class="background-grey margin-left padding">python</a>
+          <a style="color:blue" class="background-grey margin-left padding">html</a>
+          <a style="color:blue" class="background-grey margin-left padding">ecommerce</a>
+          <div class="d-none d-md-block">
+            <p></p>
+          </div>
+          <a style="color:blue" class="background-grey margin-left padding">python3</a>
+          <a style="color:blue" class="background-grey margin-left padding">ecommerce-platform</a>
+          <div class="d-none d-md-block">
+            <p></p>
+          </div>
+          <a style="color:blue" class="background-grey margin-left padding">nci-itcr</a>
+          <a style="color:blue" class="background-grey margin-left padding">solidus-extensions</a>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row border height">
+        <div class="col-12 align-center">
+          <a style="color:blue">Load more...</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container margin d-block d-lg-none">
+      <div class="row">
+        <div class="col-12">
+          <div class="container">
+            <h5>Popular topics</h5>
+            <div>
+              <p></p>
+            </div>
+          </div>
+          <a style="color:blue" class="background-grey margin-left padding">react</a>
+          <a style="color:blue" class="background-grey margin-left padding">java script</a>
+          <a style="color:blue" class="background-grey margin-left padding">css</a>
+          <div class="d-none d-md-block">
+            <p></p>
+          </div>
+          <a style="color:blue" class="background-grey margin-left padding">python</a>
+          <a style="color:blue" class="background-grey margin-left padding">html</a>
+          <a style="color:blue" class="background-grey margin-left padding">ecommerce</a>
+          <div class="d-none d-md-block">
+            <p></p>
+          </div>
+          <a style="color:blue" class="background-grey margin-left padding">python3</a>
+          <a style="color:blue" class="background-grey margin-left padding">ecommerce-platform</a>
+          <div class="d-none d-md-block">
+            <p></p>
+          </div>
+          <a style="color:blue" class="background-grey margin-left padding">nci-itcr</a>
+          <a style="color:blue" class="background-grey margin-left padding">solidus-extensions</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+
+</html>
