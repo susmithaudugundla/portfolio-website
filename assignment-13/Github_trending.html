@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
+    <script src="../bootstrap/jquery.min.js"></script>
+    <script src="../bootstrap/popper.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assignment13.css" type="text/css" />
+    <style type="text/css">
+      .logo {
+        filter: invert(100%);
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        display: inline-block;
+      }
+
+
+
+      .display {
+        display: inline-block;
+      }
+
+      .margin-top {
+        margin-top: 40px;
+      }
+
+      .background-grey {
+        background: #f2f2f2;
+        border: 0px solid black;
+        color: grey;
+      }
+
+      .background-blue {
+        background: blue;
+      }
+
+
+      .align-center {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+      }
+
+      .row-height {
+        height: 200px;
+      }
+
+
+      .bg {
+        background: black;
+      }
+
+      .back {
+        background: grey;
+      }
+
+      .white {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg navbar-collapse justify-content-center">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img style="color:white" src="assets/github-logo.svg" class="logo" width="40" height="30" class="d-inline-block align-top" alt="">
+        </a>
+        <ul class="nav">
+          <li>
+            <button class="navbar-toggler coll" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button></li>
+        </ul>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto justify-content-center">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2 back" type="search" placeholder="Search GitHub" aria-label="Search">
+            </form>
+            <li class="nav-item">
+              <a class="nav-link white" href="#">Pull requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white" href="#">Issues</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link white" href="#">Market Place</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link white" href="#">Explore</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link white" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-light bg-light justify-content-center">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" style="color:grey" href="#">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:grey" href="#">Topics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:black" href="#">Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:grey" href="#">Collections</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:grey" href="#">Events</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="row row-height background-grey">
+      <div class="col-12 align-center">
+        <div>
+          <h2>Trending</h2>
+          <p>See what the GitHub community is most excited about today.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container border margin-top background-grey">
+      <div class="row">
+        <div class="col-12">
+          <div class="container">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary background-blue">
+                <input type="radio" name="options" id="option1" checked> Repositories
+              </label>
+              <label class="btn border">
+                <input type="radio" name="options" id="option2"> Developers
+              </label>
+            </div>
+            <div class="display">
+              <div class="dropdown">
+                <button class="btn btn-secondary background-grey dropdown-toggle ml-auto" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Spoken language <span style="font-weight:bold">Any</span>
+                </button>
+                <button class="btn btn-secondary background-grey dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Language <span style="font-weight:bold">Any</span>
+                </button>
+                <button class="btn btn-secondary background-grey dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Date range <span style="font-weight:bold">Today</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </hr>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-10">
+            <div class="container">
+              <a href="https://github.com/PaulMcInnis/JobFunnel">PaulMcInnis/JobFunnel</a>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
