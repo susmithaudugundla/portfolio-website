@@ -5,22 +5,43 @@
     <title>Assignment-15</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
-    <script src="../bootstrap/jquery.min.js"></script>
-    <script src="../bootstrap/popper.min.js"></script>
-    <script src="../bootstrap/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="assignment15.css" />
     <style type="text/css">
+      @media(min-width:320px) {
+        .dis {
+          display: none;
+        }
+        .wid {
+          width: 100%;
+        }
+      }
+
+      @media(min-width:768px) {
+        .dis {
+          display: block;
+        }
+        .display1 {
+          display: inline-block;
+        }
+        .wid {
+          width: 49%;
+        }
+      }
+
+      .mar {
+        margin-left: 30px;
+      }
+
       .align {
         justify-content: bottom;
         align-items: bottom;
       }
 
-      .border12 {
+      /*.border12 {
         display: flex;
         align-items: flex-end;
-      }
+      }*/
 
       p {
         font-size: 20px;
@@ -29,34 +50,33 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="mar">
       <h1>OUR APPROACH</h1>
     </div>
-    <div class="d-md-block d-none">
+    <div class="dis">
       <hr>
     </div>
-    <div class="container">
-      <div class="row row-height">
-        <div class="col-12 col-md-6 border12">
-          <div>
-            <h2>
-              Creating Workforce for 4.0
-            </h2>
-            <p>
-              iB Hubs commits to create a powerful workforce with all the necessary tools and techniques to thrive in this new wave of transformation.
-            </p>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
+    <div class="mar">
+      <div class="wid display1">
+        <div>
           <h2>
-            Building Global Startups
+            Creating Workforce for 4.0
           </h2>
           <p>
-            we provide end-to-end assistance to startups and develop them into global companies. We give equal importance to Purpose Driven Social Enterprises and Non-Profits.
+            iB Hubs commits to create a powerful workforce with all the necessary tools and techniques to thrive in this new wave of transformation.
           </p>
         </div>
       </div>
+      <div class="wid display1">
+        <h2>
+          Building Global Startups
+        </h2>
+        <p>
+          we provide end-to-end assistance to startups and develop them into global companies. We give equal importance to Purpose Driven Social Enterprises and Non-Profits.
+        </p>
+      </div>
     </div>
+
 
   </body>
 
