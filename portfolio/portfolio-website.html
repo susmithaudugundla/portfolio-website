@@ -8,11 +8,34 @@
         <script src="../bootstrap/jquery.min.js"></script>
         <script src="../bootstrap/popper.min.js"></script>
         <script src="../bootstrap/bootstrap.min.js"></script>
+        <title>Susmitha_Udugundla_Profile</title>
         <style type="text/css">
+            /* Centered text */
+
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 35%;
+                transform: translate(-50%, -50%);
+            }
+
+            .col-height {
+                height: 50px;
+
+            }
+
+
+            .border12 {
+                border: 1px solid white;
+            }
+
+
             body {
+                background-image: linear-gradient(red, green, blue);
                 background: #8ec8e6;
                 font-family: Arial;
             }
+
 
             .text-black {
                 color: black;
@@ -37,6 +60,7 @@
                 width: 70px;
                 height: auto;
                 filter: invert(100%);
+
             }
 
             .row-width {
@@ -52,6 +76,12 @@
             @media (min-width:768px) {
                 .pad-right {
                     padding-right: 30px;
+                }
+                .col-height {
+                    height: 100px;
+                }
+                .ed-col-height {
+                    height: 50px;
                 }
 
                 .pad-left {
@@ -101,7 +131,7 @@
             .img {
                 background-image: url("background.jpg");
                 background-repeat: no-repeat;
-                background-position: center;
+                /*background-position: center;*/
                 background-size: cover;
             }
 
@@ -122,18 +152,23 @@
                 height: 600px;
             }
 
+
             .make-items-center {
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
+
+            .nav-back {
+                background: #f53b7c;
+            }
         </style>
     </head>
 
     <body>
-        <div class="back fixed-top">
+        <div class="nav-back fixed-top">
 
-            <nav class="navbar container navbar-transparent back navbar-expand-md navbar-dark">
+            <nav class="navbar container navbar-transparent nav-back navbar-expand-md navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -173,13 +208,13 @@
                         <a class="nav-link active">Susmitha Udugundla</a>
                     </li>
                 </ul>
-
             </nav>
         </div>
         <div class="container-fluid img border">
             <div class="row custom-height">
                 <div class="col-12 ">
-
+                    <div class="centered">
+                    </div>
                 </div>
             </div>
         </div>
@@ -387,8 +422,8 @@
                         <h1>My Projects</h1>
                     </div>
                     <div class="col-12">
-                        <div class="row margin-bottom row-width">
-                            <div class="col-md-4 col-12 back-blue bor make-items-center">
+                        <div class="row margin-bottom text-center row-width">
+                            <div class="col-md-4 col-12 back-blue bor col-height make-items-center">
                                 <div>
                                     <h5>Judiciary Information System (JIS)</h5>
                                 </div>
@@ -398,7 +433,7 @@
                             </div>
                         </div>
                         <div class="row margin-bottom text-center row-width">
-                            <div class="col-md-4 col-12 back-blue bor make-items-center">
+                            <div class="col-md-4 col-12 back-blue col-height bor make-items-center">
                                 <div>
                                     <h5>Voice Controlled Home Automation</h5>
                                 </div>
@@ -427,7 +462,7 @@
                                 <p>RGUKT RKValley</p>
                                 <p>Vempalli Kadapa</p>
                             </div>
-                            <div class="col-md-4 col-12 back-blue bor make-items-center">
+                            <div class="col-md-4 col-12 back-blue ed-col-height bor make-items-center">
                                 <div>
                                     <h5>Engineering</h5>
                                 </div>
@@ -439,7 +474,7 @@
                                 <p>I had completed PUC in RGUKT RKValley</p>
                                 <p>Vempalli Kadapa</p>
                             </div>
-                            <div class="col-md-4 col-12 back-blue bor make-items-center">
+                            <div class="col-md-4 col-12 back-blue ed-col-height bor make-items-center">
                                 <div>
                                     <h5>PUC</h5>
                                 </div>
@@ -452,7 +487,7 @@
                                 <p>Z.P Girls High School</p>
                                 <p>Dharmavaram Anantapuram</p>
                             </div>
-                            <div class="col-md-4 col-12 back-blue bor make-items-center">
+                            <div class="col-md-4 col-12 back-blue bor ed-col-height make-items-center">
                                 <div>
                                     <h5>SSC</h5>
                                 </div>
