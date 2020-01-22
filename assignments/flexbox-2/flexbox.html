@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Flexbox</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="flexbox.css" />
+    <style type="text/css">
+      .flex {
+        display: flex;
+
+        justify-content: flex-start;
+      }
+
+      @media(max-width:991px) {
+        .none2 {
+          display: none;
+        }
+      }
+
+      @media(min-width:992px) {
+        .none1 {
+          display: none;
+        }
+      }
+
+
+
+      .twitter {
+        width: 60px;
+        border-radius: 30px;
+      }
+
+      .align {
+        /*padding-top: 15px;
+        align-items: center;*/
+        width: 20px;
+      }
+
+      .base {
+        align-items: center;
+
+        justify-content: center;
+
+      }
+
+      /** {
+        border: 1px solid black;
+
+      }*/
+
+      .bold {
+        font-weight: 900;
+      }
+
+      .drop {
+        width: 15px;
+      }
+
+
+
+      .center {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .width {
+        width: 100%;
+      }
+
+      .height {
+        height: 400px;
+      }
+
+      .flex-end {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+
+      .last {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+      }
+
+      .last img {
+        width: 20px;
+      }
+
+
+      .margin,
+      .margin p {
+        margin: 0px;
+      }
+
+
+      .dis {
+        display: inline-block;
+      }
+
+      .left-margin {
+        margin-left: 20px;
+      }
+
+      .left {
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex height">
+      <div class="center">
+        <img class="twitter" src="assets/twitter.jpg"></img>
+      </div>
+      <div class="center left-margin width">
+        <div class="width">
+          <div class="flex width margin">
+            <p class="bold">Twitter
+            </p>
+            <p><img class="align" src="assets/tick.svg"></img>
+            </p>
+            <p> @Twitter.Jan1</p>
+            <div class="flex-end width">
+              <p><img class="drop" src="assets/drop_down.svg"></img>
+              </p>
+            </div>
+          </div>
+
+          <p class="margin">New decade, drink water.</p>
+          <!--<div class="last">
+            <p class="last left"><img src="assets/message.svg"> 13.5k
+            </p>
+            <p class="last left"><img src="assets/retweet.svg"></img>
+              290.8k
+            </p>
+            <p class="last left"><img src="assets/like.svg"></img>
+              300.9k
+            </p>
+            <p class="last left"><img src="assets/share.svg"></img>
+            </p>
+          </div>-->
+
+          <div class="last">
+            <div class="grow">
+              <div class="last">
+                <img src="assets/message.svg"> 13.5k</img>
+              </div>
+            </div>
+            <div class="grow">
+
+              <div class="last">
+                <img src="assets/retweet.svg"> 290.8k
+
+              </div>
+            </div>
+            <div class="grow">
+              <div class="last">
+                <img src="assets/like.svg"> 943.1k
+
+              </div>
+            </div>
+            <div class="grow">
+              <div class="last">
+                <img class="none1" src="assets/share.svg">
+                <img class="none2" src="assets/share_desktop.svg"></img>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </body>
+
+</html>

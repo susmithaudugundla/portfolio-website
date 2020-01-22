@@ -8,6 +8,7 @@
         <script src="../bootstrap/jquery.min.js"></script>
         <script src="../bootstrap/popper.min.js"></script>
         <script src="../bootstrap/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
         <title>Susmitha_Udugundla_Profile</title>
         <style type="text/css">
             /* Centered text */
@@ -19,8 +20,13 @@
                 transform: translate(-50%, -50%);
             }
 
+
+            .white {
+                background: white;
+            }
+
             .col-height {
-                height: 50px;
+                height: 60px;
 
             }
 
@@ -33,7 +39,6 @@
             body {
                 background-image: linear-gradient(red, green, blue);
                 background: #8ec8e6;
-                font-family: Arial;
             }
 
 
@@ -51,22 +56,13 @@
                 border: 2px solid #38abcf;
             }
 
+
             .size img {
-                width: 40px;
+                width: 20px;
                 height: auto;
             }
 
-            img {
-                width: 70px;
-                height: auto;
-                filter: invert(100%);
 
-            }
-
-            .row-width {
-                padding-left: 70px;
-                padding-right: 70px;
-            }
 
             .back-blue {
                 background: #38abcf;
@@ -81,13 +77,43 @@
                     height: 100px;
                 }
                 .ed-col-height {
-                    height: 50px;
+                    height: 80px;
                 }
 
                 .pad-left {
                     padding-left: 30px;
                 }
 
+            }
+
+            @media(min-width:320px) {
+                .fill img {
+                    width: 150px;
+                    height: 160px;
+                    padding: 5px;
+                    border-radius: 80px;
+                    border: 4px solid #8ec8e6;
+                }
+            }
+
+            @media(min-width:768px) {
+                .fill img {
+                    width: 200px;
+                    height: 213px;
+                    padding: 5px;
+                    border-radius: 100px;
+                    border: 4px solid #8ec8e6;
+                }
+            }
+
+            @media(min-width:992px) {
+                .fill img {
+                    width: 250px;
+                    height: 266px;
+                    padding: 5px;
+                    border-radius: 130px;
+                    border: 4px solid #8ec8e6;
+                }
             }
 
             .pad-bottom {
@@ -109,7 +135,13 @@
 
             .dis {
                 display: inline-block;
-                width: 49%;
+                width: 78%;
+            }
+
+            .dis1 {
+                display: inline-block;
+                width: 20%;
+
             }
 
             .pro-back {
@@ -128,7 +160,7 @@
                 text-align: center;
             }
 
-            .img {
+            .imgage1 {
                 background-image: url("background.jpg");
                 background-repeat: no-repeat;
                 /*background-position: center;*/
@@ -142,6 +174,7 @@
 
             .back {
                 background: black;
+
             }
 
             .text-color {
@@ -161,6 +194,43 @@
 
             .nav-back {
                 background: #f53b7c;
+            }
+
+            @media (min-width:320px) {
+                body {
+                    font-family: 'Comfortaa';
+                    font-size: 16px;
+                }
+                .con img {
+                    width: 30px;
+                    height: auto;
+                    filter: invert(100%);
+
+                }
+                .row-width {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+            }
+
+            @media (min-width:576px) {
+                body {
+                    font-family: 'Comfortaa';
+                    font-size: 18px;
+                }
+                .con img {
+                    width: 70px;
+                    height: auto;
+                    filter: invert(100%);
+
+                }
+
+                .row-width {
+                    padding-left: 70px;
+                    padding-right: 70px;
+                }
+
             }
         </style>
     </head>
@@ -210,7 +280,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="container-fluid img border">
+        <div class="container-fluid imgage1">
             <div class="row custom-height">
                 <div class="col-12 ">
                     <div class="centered">
@@ -227,10 +297,14 @@
                 <div class="col-12 margin-bottom text-center">
                     <h1>About Me</h1>
                 </div>
-                <div class="col-md-4 col-12"></div>
+                <div class="col-md-4 col-12 fill text-center">
+                    <div>
+                        <img src="emma.jpg"></img>
+                    </div>
+                </div>
                 <div class="col-md-8 col-12">
-                    <h2>Hi, I am Susmitha Udugundla</h2>
-                    <caption>Web designer and developer</caption>
+                    <h2>Hi, I am <span style="color:#f53b7c">Susmitha Udugundla</span></h2>
+                    <p style="font-size:14px;color:grey">Web designer and developer</p>
                     <hr>
                     <div class="row">
                         <div class="col-3">
@@ -276,7 +350,7 @@
                     <div class="col-md-6 col-12 pad-right">
                         <div class="row row-margin">
                             <div class="col-12">
-                                <h4>Technical Skills</h4>
+                                <h4 style="color:#f53b7c">Technical Skills</h4>
                                 <hr>
                             </div>
                         </div>
@@ -287,7 +361,7 @@
                                 <div class="text-left dis">
                                     <p>Web Design</p>
                                 </div>
-                                <div class="text-right dis">
+                                <div class="text-right dis1">
                                     <p>85%</p>
                                 </div>
                                 <div class="progress">
@@ -303,7 +377,7 @@
                                     <p>C Language</p>
                                 </div>
 
-                                <div class="text-right dis">
+                                <div class="text-right dis1">
                                     <p>90%</p>
                                 </div>
                                 <div class="progress">
@@ -318,7 +392,7 @@
                                     <p>Java</p>
                                 </div>
 
-                                <div class="text-right dis">
+                                <div class="text-right dis1">
                                     <p>85%</p>
                                 </div>
                                 <div class="progress">
@@ -333,7 +407,7 @@
                                     <p>Android Development</p>
                                 </div>
 
-                                <div class="text-right dis">
+                                <div class="text-right dis1">
                                     <p>75%</p>
                                 </div>
                                 <div class="progress">
@@ -346,7 +420,7 @@
                     <div class="col-md-6 col-12 pad-left">
                         <div class="row row-margin">
                             <div class="col-12">
-                                <h4>Professional Skills</h4>
+                                <h4 style="color:#f53b7c">Professional Skills</h4>
                                 <hr>
                             </div>
                         </div>
@@ -356,7 +430,7 @@
                                 <div class="text-left dis">
                                     <p>Communication</p>
                                 </div>
-                                <div class="text-right dis">
+                                <div class="text-right dis1">
                                     <p>70%</p>
                                 </div>
                                 <div class="progress">
@@ -371,7 +445,7 @@
                                     <p>Social Media Marketing</p>
                                 </div>
 
-                                <div class="text-right dis">
+                                <div class="text-right dis1">
                                     <p>80%</p>
                                 </div>
                                 <div class="progress">
@@ -386,7 +460,7 @@
                                     <p>Leadership</p>
                                 </div>
 
-                                <div class="text-right dis">
+                                <div class="text-right dis1">
                                     <p>75%</p>
                                 </div>
                                 <div class="progress">
@@ -401,7 +475,7 @@
                                     <p>Confidence</p>
                                 </div>
 
-                                <div class="text-right dis">
+                                <div class="text-right dis1">
                                     <p>80%</p>
                                 </div>
                                 <div class="progress">
@@ -416,7 +490,7 @@
 
 
         <div id="projects" class="container back pad-bottom text-color margin-top">
-            <div class="container">
+            <div class="">
                 <div class="row row-margin">
                     <div class="col-12 text-center margin-bottom">
                         <h1>My Projects</h1>
@@ -425,20 +499,22 @@
                         <div class="row margin-bottom text-center row-width">
                             <div class="col-md-4 col-12 back-blue bor col-height make-items-center">
                                 <div>
-                                    <h5>Judiciary Information System (JIS)</h5>
+                                    <h5>Project AY_2018-19_SEM-2</h5>
                                 </div>
                             </div>
                             <div class="col-md-8 col-12 bor">
+                                <h4 style="color:#f53b7c">Judiciary Information System (JIS)</h4>
                                 <p>Judiciary Information System is a software , which is designed to make easy to access all the court cases for the judge and lawyers and it is maintained by registrer, he will enter all the case details.</p>
                             </div>
                         </div>
                         <div class="row margin-bottom text-center row-width">
                             <div class="col-md-4 col-12 back-blue col-height bor make-items-center">
                                 <div>
-                                    <h5>Voice Controlled Home Automation</h5>
+                                    <h5>Project AY_2019-20_SEM-1</h5>
                                 </div>
                             </div>
                             <div class="col-md-8 col-12 bor">
+                                <h4 style="color:#f53b7c">Voice Controlled Home Automation</h4>
                                 <p>Voice Controlled Home Automation, which is based on Internet of Things(IOT). This is useful for the elders and physically handicapped people. They can use their voice to communicate with things using mobiles for this we
                                     used inbuilt wifi module.</p>
                             </div>
@@ -450,7 +526,7 @@
 
 
         <div id="education" class="container back pad-bottom text-color margin-top">
-            <div class="container">
+            <div class="">
                 <div class="row row-margin">
                     <div class="col-12 text-center margin-bottom">
                         <h1>My Education</h1>
@@ -458,38 +534,41 @@
                     <div class="col-12">
                         <div class="row margin-bottom row-width">
                             <div class="col-md-8 order-1 col-12 bor">
+                                <h5 style="color:#f53b7c">Engineering</h5>
                                 <p>I am now studying Engineering in the stream of Computer Science Engineering.</p>
                                 <p>RGUKT RKValley</p>
                                 <p>Vempalli Kadapa</p>
                             </div>
                             <div class="col-md-4 col-12 back-blue ed-col-height bor make-items-center">
                                 <div>
-                                    <h5>Engineering</h5>
+                                    <h5>2017-21<br>RGUKT</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="row margin-bottom row-width">
 
                             <div class="col-md-8 col-12 order-1 bor">
+                                <h5 style="color:#f53b7c">PUC</h5>
                                 <p>I had completed PUC in RGUKT RKValley</p>
                                 <p>Vempalli Kadapa</p>
                             </div>
                             <div class="col-md-4 col-12 back-blue ed-col-height bor make-items-center">
                                 <div>
-                                    <h5>PUC</h5>
+                                    <h5>2015-17<br>RGUKT</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="row margin-bottom row-width">
 
                             <div class="col-md-8 order-1 col-12 bor">
+                                <h5 style="color:#f53b7c">SSC</h5>
                                 <p>I had completed my SSC in my home town.</p>
                                 <p>Z.P Girls High School</p>
                                 <p>Dharmavaram Anantapuram</p>
                             </div>
-                            <div class="col-md-4 col-12 back-blue bor ed-col-height make-items-center">
+                            <div class="col-md-4 col-12 back-blue bor ed-col-height text-center make-items-center">
                                 <div>
-                                    <h5>SSC</h5>
+                                    <h5>2014-15<br>Z.P.G High School</h5>
                                 </div>
                             </div>
                         </div>
@@ -498,7 +577,7 @@
             </div>
         </div>
 
-        <div id="contact" class="container back pad-bottom text-color margin-top">
+        <div id="contact" class="container back pad-bottom text-color last margin-top con">
             <div class="container">
                 <div class="row row-margin">
                     <div class="col-12 text-center margin-bottom">
@@ -526,7 +605,7 @@
                                 <p>+911234567890</p>
                             </div>
                         </div>
-                        <div class="row margin-bottom row-width">
+                        <div class="row margin-bottom">
                             <div class="col-12 size">
                                 <div>
                                     <img src="twitter.png"></img>

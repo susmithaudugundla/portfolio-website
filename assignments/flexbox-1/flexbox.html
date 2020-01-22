@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Flexbox</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="flexbox.css" />
+    <style type="text/css">
+      .flex {
+        display: flex;
+      }
+
+      .flex div {
+        padding-top: 400px;
+        padding-bottom: 400px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+      }
+
+      .back-blue {
+        background: #0256de;
+      }
+
+      .back-pink {
+        background: #c400f5;
+      }
+
+      .back-orange {
+        background: #f58b00;
+      }
+
+      .back-green {
+        background: #00f5c0;
+      }
+
+      .flex p {
+        flex-grow: 1;
+      }
+
+      img {
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex">
+      <div class="back-blue">
+        <img src="assets/HTML5_logo.png"></img>
+
+      </div>
+      <div class="back-pink">
+        <img src="assets/CSS_logo.svg"></img>
+
+      </div>
+      <div class="back-orange">
+        <img src="assets/bootstrap_logo.png"></img>
+
+      </div>
+      <div class="back-green">
+        <img src="assets/js_logo.png"></img>
+
+      </div>
+    </div>
+  </body>
+
+</html>
