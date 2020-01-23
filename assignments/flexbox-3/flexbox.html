@@ -1,14 +1,134 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Flexbox</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" type="text/css" href="flexbox.css" />
+    <style>
+      .flexbox {
+        display: flex;
+      }
+
+      .but {
+        width: 100%;
+        align-self: center;
+        display: flex;
+        align-items: flex-end;
+        flex-grow: 1;
+      }
+
+      .but button {
+        flex-grow: 1;
+      }
+
+      .flex-center {
+        border-radius: 15px;
+        border: 2px solid #cae805;
+        background: lightgoldenrodyellow;
+        margin: 5px;
+        width: 48%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+
+
+      .center {
+        align-self: center;
+      }
+
+      .width {
+        height: 50px;
+        background: green;
+        color: white;
+        font-weight: 900;
+        flex-grow: 1;
+        border-radius: 25px;
+        align-self: flex-end;
+      }
+
+      h3 {
+        color: blue;
+      }
+
+      .grow {
+        flex-grow: 2;
+      }
+
+      .img-width {
+        text-align: center;
+        width: 159px;
+      }
+
+      .img-width2 {
+        text-align: center;
+        width: 100px;
+      }
+
+      .flex {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+
+      }
+
+      button {
+        width: 90%;
+        background: green;
+        border-radius: 20px;
+        color: white;
+        height: 40px;
+        margin: 10px;
+      }
+    </style>
   </head>
 
-  <body></body>
+  <body>
+    <div class="flexbox">
+      <div class="flex-center">
+        <p class="center"><img class="img-width" src="assets/computer.jpg"></img>
+        </p>
+        <h3>Computer starter kit</h3>
+        <p>This is the best computer money can buy, if you don't have much money.</p>
+        <ul>
+          <li>
+            Computer
+          </li>
+          <li>
+            Monitor
+          </li>
+
+          <li>
+            Keyboard
+          </li>
+          <li>
+            Mouse
+          </li>
+        </ul>
+        <button type="button">BUY NOW</button>
+
+      </div>
+      <div class="flex-center grow">
+        <p class="center"><img class="img-width2" src="assets/printer.png"></img>
+        </p>
+        <h3>Printer</h3>
+        <p>Only capable of printing ASCII art</p>
+        <ul>
+          <li>
+            Paper and ink are not included.
+          </li>
+        </ul>
+        <div class="but">
+          <button type="button">BUY NOW</button>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+
 </html>
