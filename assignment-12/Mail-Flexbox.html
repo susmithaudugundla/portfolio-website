@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Flexbox</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    </head>
+    <style type="text/css">
+        .flexbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        .flexbox-flex-start {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .flex-grow {
+            flex-grow: 10;
+        }
+
+
+        .img-100 img {
+            width: 100%;
+
+        }
+
+        ul {
+            list-style: none;
+
+            padding: 10px;
+        }
+
+        .align-right {
+            align-self: center;
+            flex-grow: 1;
+        }
+
+        .img-100 {
+            width: 100%;
+        }
+
+        .flex-column-100 img {
+            width: 10%;
+        }
+
+        .grow-flex {
+            margin: 0px;
+            flex-grow: 0;
+            height: 40px;
+            background: blue;
+            color: white;
+        }
+
+        .logo-width {
+            width: 20px;
+        }
+
+
+
+        @media(max-width:767px) {
+            .md-none {
+                display: none;
+            }
+            .order {
+                order: 1;
+            }
+            .flexbox-column {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .flex-one-column {
+                flex-direction: column;
+                width: 100%;
+                display: flex;
+                text-align: center;
+                padding: 15px;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        @media(min-width:768px) {
+
+            .height {
+                height: 300px;
+
+            }
+
+            .sm-none {
+                display: none;
+            }
+
+            .flex-column {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 49%;
+                padding: 15px;
+            }
+        }
+
+        .flex-column-100 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+
+        .flex-end {
+            align-self: flex-end;
+        }
+
+        .land-img-width {
+            width: 100%;
+        }
+
+        .margin {
+            margin: 10px;
+        }
+
+        .bold {
+            font-weight: 900;
+        }
+
+        .back-grey {
+            background: #f2f2f2;
+        }
+
+        .flex-row-50 {
+            width: 50%;
+            align-self: flex-end;
+        }
+
+        .img-center img {
+            width: 20%;
+        }
+
+        .flex-start {
+            align-self: flex-start;
+        }
+    </style>
+
+    <body>
+        <ul class="flexbox">
+            <li><img class="logo-width" src="assets/logo-gmail.png"></img>
+            </li>
+            <li class="flex-grow">Gmail</li>
+            <li class="align-right md-none">For work</li>
+            <li class="align-right md-none">Sign in</li>
+            <li><button class="grow-flex md-none" type="button">Create account</button></li>
+            <li><button class="grow-flex sm-none" type="button">Get Gmail</button></li>
+        </ul>
+        <hr class="sm-none">
+        <ul class="flexbox sm-none">
+            <li class="flex-grow">For work</li>
+            <li>Sign in</li>
+        </ul>
+
+        <div class="flexbox margin back-grey">
+            <div class="flex-column flex-one-column">
+                <h2>Get more done with Gmail</h2>
+                <p>Now more secure,smarter and easier to use-helping you save time and do more with your inbox.</p>
+                <button class="grow-flex md-none" type="button">Create account</button>
+                <img class="land-img-width sm-none" src="assets/landing-page-image-mobile.png" alt="gmail">
+                <button class="grow-flex sm-none" type="button">Create account</button>
+            </div>
+            <div class="flex-column md-none">
+                <img class="land-img-width md-none" src="assets/landing-page-image-desktop.png" alt="gmail">
+            </div>
+        </div>
+
+        <div class="flex-column-100">
+            <h2>Experiance Gmail on your device</h2>
+            <p>the ease and simplicity of Gmail, wherever you are</p>
+            <div class="flexbox img-center">
+                <img src="assets/google-playstore.png"></img>
+                <img src="assets/app-store.png"></img>
+            </div>
+        </div>
+
+        <div>
+            <img src="assets/experience-image-mobile-desktop.png" class="img-100"></img>
+        </div>
+
+        <div class="flexbox flexbox-column img-100">
+            <div class="flex-column height margin back-grey flex-one-column">
+                <h2>Stay organised instantly</h2>
+                <p>See what's new at a glance and decide what you want to read and respond to.</p>
+                <img src="assets/stay-organised-instantly-desktop.png" class="md-none">
+                <img src="assets/stay-organised-instantly-mobile.png" class="sm-none"></img>
+            </div>
+            <div class="flex-column height margin back-grey flex-one-column">
+                <h2>Never drop the ball</h2>
+                <p>Get nudges that remind you to follow up and respond to messages, so that nothing slips through the cracks.</p>
+                <img src="assets/never-drop-the-ball-desktop.png" class="md-none"></img>
+                <img src="assets/never-drop-the-ball-mobile.png" class="sm-none"></img>
+            </div>
+        </div>
+
+        <div class="flexbox img-100">
+            <div class="flex-column margin height flex-one-column">
+                <h2>Take action right from the inbox</h2>
+                <p>View attachments, RSVP to events, snooze messages and more without opening any emails.</p>
+                <img src="assets/take-action-mobile.png" class="sm-none"></img>
+            </div>
+            <div class="flex-column height margin md-none">
+
+                <img src="assets/take-action-desktop.png" class="md-none"></img>
+
+            </div>
+        </div>
+
+
+        <div class="flexbox flexbox-column back-grey img-100">
+            <div class="flex-column height margin flex-one-column">
+                <img src="assets/avoid-suspicious-emails-desktop.png" class="md-none"></img>
+            </div>
+            <div class="flex-column height margin flex-one-column">
+                <h2>Avoid suspicious emails</h2>
+                <p>Gmail block 99.9% of dangerous emails before they reach you. If we seems something seems phish-y. You'll get a warning.</p>
+                <img src="assets/avoid-suspicious-emails-mobile.png" class="sm-none"></img>
+            </div>
+        </div>
+
+
+        <div class="flex-column-100 height">
+            <img src="assets/logo-gmail.png"></img>
+
+            <h2>Get started with Gmail</h2>
+            <button class="grow-flex" type="button">Create account</button>
+        </div>
+
+
+
+        <div class="back-grey">
+            <h2>Google</h2>
+            <ul class="flexbox-flex-start">
+                <li class="align-right">Privacy</li>
+                <li class="align-right">Terms</li>
+                <li class="align-right">About Google</li>
+                <li class="align-right">Google Products</li>
+                <li class="align-right">Our Policy</li>
+                <li class="align-right">Help</li>
+                <li class="flex-grow">English India</li>
+            </ul>
+        </div>
+    </body>
+
+</html>
