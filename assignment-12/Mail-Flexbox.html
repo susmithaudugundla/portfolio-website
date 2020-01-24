@@ -13,8 +13,6 @@
             justify-content: center;
         }
 
-
-
         .flexbox-flex-start {
             display: flex;
             justify-content: flex-start;
@@ -26,15 +24,12 @@
             flex-grow: 10;
         }
 
-
         .img-100 img {
             width: 100%;
-
         }
 
         ul {
             list-style: none;
-
             padding: 10px;
         }
 
@@ -63,8 +58,6 @@
             width: 20px;
         }
 
-
-
         @media(max-width:767px) {
             .md-none {
                 display: none;
@@ -87,14 +80,11 @@
                 justify-content: center;
                 align-items: center;
             }
-
         }
 
         @media(min-width:768px) {
-
             .height {
                 height: 300px;
-
             }
 
             .sm-none {
@@ -120,9 +110,14 @@
             width: 100%;
         }
 
-
         .flex-end {
             align-self: flex-end;
+        }
+
+        .flexbox-base {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
         }
 
         .land-img-width {
@@ -219,9 +214,7 @@
                 <img src="assets/take-action-mobile.png" class="sm-none"></img>
             </div>
             <div class="flex-column height margin md-none">
-
                 <img src="assets/take-action-desktop.png" class="md-none"></img>
-
             </div>
         </div>
 
@@ -240,7 +233,6 @@
 
         <div class="flex-column-100 height">
             <img src="assets/logo-gmail.png"></img>
-
             <h2>Get started with Gmail</h2>
             <button class="grow-flex" type="button">Create account</button>
         </div>
@@ -255,7 +247,10 @@
                 <li class="align-right">About Google</li>
                 <li class="align-right">Google Products</li>
                 <li class="align-right">Our Policy</li>
-                <li class="align-right">Help</li>
+                <li class="align-right flexbox-base">
+                    <img src="assets/question-mark.png">
+                    <p>Help</p>
+                </li>
                 <li class="flex-grow">English India</li>
             </ul>
         </div>
