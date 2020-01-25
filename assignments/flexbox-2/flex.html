@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Flexbox</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <style type="text/css">
+            .flexbox {
+                display: flex;
+            }
+
+            .text-grey {
+                color: grey;
+            }
+
+            body {
+                font-size: 25px;
+            }
+
+            .content-flexbox {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-grow: 1;
+
+            }
+
+            .twitter-logo {
+                width: 60px;
+                border-radius: 30px;
+            }
+
+            .bold {
+                font-weight: 900;
+            }
+
+            .tick {
+                width: 28px;
+            }
+
+            p {
+                margin: 0px;
+                margin-left: 10px;
+            }
+
+            /* {
+                border: 1px solid black;
+            }*/
+
+            .flex-grow-1 {
+                flex-grow: 10;
+            }
+
+            .drop {
+                width: 20px;
+            }
+
+            /*.border {
+                border: 2px solid red;
+            }*/
+
+            .d-block {
+                display: block;
+            }
+
+            .flexbox-stats img {
+                width: 30px;
+            }
+
+            .flexbox-stats {
+                margin-top: 10px;
+                margin-left: 10px;
+                display: flex;
+            }
+
+            .flexbox-stats div {
+                display: flex;
+                flex-grow: 1;
+            }
+
+            @media(max-width:1199px) {
+                .lg-none {
+                    display: none;
+                }
+            }
+
+            @media(min-width:1200px) {
+                .xl-none {
+                    display: none;
+                }
+            }
+
+            @media(min-width:768px) {
+                .flexbox-stats .share {
+                    flex-grow: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flexbox">
+            <div>
+                <img class="twitter-logo" src="assets/twitter.jpg"></img>
+            </div>
+            <div class="flex-grow-1">
+                <div class="content-flexbox border">
+                    <p class="bold">Twitter</p>
+                    <img class="tick" src="assets/tick.svg">
+                    <p class="text-grey flex-grow-1">@Twitter Jan</p>
+                    <img class="drop" src="assets/drop_down.svg"></img>
+
+                </div>
+                <div>
+                    <p>New Decade, drink water</p>
+                </div>
+                <div class="flexbox-stats">
+                    <div class=" border">
+                        <img src="assets/message.svg"></img>
+                        <p>13.5k</p>
+                    </div>
+                    <div class="border">
+                        <img src="assets/retweet.svg">
+                        <p>290.8k</p>
+                    </div>
+                    <div class="border">
+                        <img src="assets/like.svg">
+                        <p>943.1k</p>
+                    </div>
+                    <div class="border share">
+                        <img class="xl-none" src="assets/share.svg">
+                        <img class="lg-none" src="assets/share_desktop.svg"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
