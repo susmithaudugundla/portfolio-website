@@ -65,6 +65,9 @@
             .order {
                 order: 1;
             }
+            .xl-none {
+                display: none;
+            }
             .flexbox-column {
                 display: flex;
                 justify-content: center;
@@ -86,6 +89,9 @@
             .height {
                 height: 300px;
             }
+            .xl-none {
+                display: none;
+            }
 
             .sm-none {
                 display: none;
@@ -99,6 +105,25 @@
                 width: 49%;
                 padding: 15px;
             }
+        }
+
+        @media(min-width:1200px) {
+            .flex-box-xl {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .margin-left-right {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .xl-margin-right {
+                margin-right: 20px;
+            }
+            .xl-flexgrow {
+                flex-grow: 0.5;
+            }
+
         }
 
         .flex-column-100 {
@@ -147,6 +172,18 @@
 
         .flex-start {
             align-self: flex-start;
+        }
+
+        .margin-right {
+            margin-right: 20px;
+        }
+
+        .border {
+            border: 2px solid red;
+        }
+
+        .border1 {
+            border: 2px solid green;
         }
     </style>
 
@@ -239,20 +276,36 @@
 
 
 
-        <div class="back-grey">
-            <h2>Google</h2>
+        <div class="back-grey flex-box-xl">
+            <h2 class="xl-margin-right">Google</h2>
             <ul class="flexbox-flex-start">
-                <li class="align-right">Privacy</li>
-                <li class="align-right">Terms</li>
-                <li class="align-right">About Google</li>
-                <li class="align-right">Google Products</li>
-                <li class="align-right">Our Policy</li>
-                <li class="align-right flexbox-base">
+                <li class="margin-right">Privacy</li>
+                <li class="margin-right">Terms</li>
+                <li class="margin-right">About Google</li>
+                <li class="margin-right">Google Products</li>
+                <li class="margin-right xl-flexgrow">Our Policy</li>
+                <li class="margin-right flexbox-base md-none">
+                    <img class="md-none" src="assets/question-mark.png">
+                    <p class="md-none">Help</p>
+                </li>
+                <li class="flex-grow md-none">English India</li>
+            </ul>
+            <ul class="flexbox-flex-start sm-none">
+                <li class="margin-right flexbox-base">
                     <img src="assets/question-mark.png">
                     <p>Help</p>
                 </li>
                 <li class="flex-grow">English India</li>
             </ul>
+            <ul class="flexbox-flex-start xl-none margin-left-right">
+
+                <li class="margin-right flexbox-base">
+                    <img src="assets/question-mark.png">
+                    <p>Help</p>
+                </li>
+                <li>English India</li>
+            </ul>
+
         </div>
     </body>
 
