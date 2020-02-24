@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+	</head>
+
+	<body id="console-root">
+		<script type="text/javascript" src="https://tap.ibhubs.in/utils/console.js"></script>
+		<!--<script type="text/javascript">
+			let array = ["teacher", "friend", "cricket", "farmer", "rose", "talent", "trainer"];
+			let arrayFilter = array.filter(word => {
+				return (word.startsWith('f') || word.endsWith('r'));
+			});
+			alert(arrayFilter);
+		</script>-->
+		<!--<script type="text/javascript">
+			let string = "Was it a cat I saw?";
+			let uniqueCharacters = string.split('').filter(function(char, i, array) { return array.indexOf(char) == i; });
+			alert(uniqueCharacters);
+		</script>-->
+		<!--<script type="text/javascript">
+			let array = ["Cyber Security", "Data Analytics", "Blockchain", "IoT"];
+			let uppercaseArray = array.map(item => item.toUpperCase());
+			alert(uppercaseArray);
+		</script>-->
+		<!--<script type="text/javascript">
+			let array = [5, 1, 9, 6, 15];
+
+			function alternateSquare(item, index, array) {
+				if (index % 2 == 0) {
+					return item ** 2;
+				}
+				else {
+					return item;
+				}
+			}
+			let squareArray = array.map(alternateSquare);
+			alert(squareArray);
+		</script>-->
+		<!--<script type="text/javascript">
+			let array = ["5", "1", "9", "6", "15"];
+			let flag = 0;
+			array.forEach(function(item, index, array) {
+				if (typeof item !== "string" && flag == 0) {
+					flag = 1;
+					alert("false");
+				}
+			});
+			if (flag == 0) {
+				alert("true");
+			}
+		</script>-->
+		<!--<script type="text/javascript">
+			let flag = 0;
+			let array = ["Telugu", "Kannada", "Malayalam", "Tamil"];
+			array.forEach(function(item, index, array) {
+				item = item.toUpperCase();
+				if (item == item.split('').reverse().join('') && flag == 0) {
+					alert("true");
+					flag = 1;
+				}
+			});
+			if (flag == 0) {
+				alert("false");
+			}
+		</script>-->
+		<!--<script type="text/javascript">
+			let array1 = ["birch", "maple", "bonsai", "oak", "poplar"];
+			let array = ["Telugu", "Kannada", "Malayalam", "Tamil"];
+			let findArray = array.find(function(item, index, array) {
+				if (item.startsWith('T') && item.length == 5) {               //DOUBT
+					return item;
+				}
+			});
+			alert(findArray);
+		</script>-->
+		<script type="text/javascript">
+			let trees = [
+				{ name: "birch", count: 10, type: "outdoor" },
+				{ name: "maple", count: 7, type: "indoor/outdoor" },
+				{ name: "peace lilly", count: 6, type: "indoor" },
+				{ name: "oak", count: 2, type: "outdoor" },
+				{ name: "lucky bamboo", count: 7, type: "indoor" }
+			];
+			let findArray = trees.find(function(item, index, array) {
+				if (item.count > 6 && item.type == "indoor") {
+					return "true";
+				}
+			});
+			console.log(findArray);
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RGB App</title>
+    <link rel="stylesheet" href="rgb-app.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <!-- <script src="https://tap.ibhubs.in/utils/console.js"></script>-->
+    <script src="rgb-app.js"></script>
+    <div class="flex-container">
+      <div id="left-division" class="flex-item flex-container-left-division">
+
+        <div class="buttons-division">
+          <button class="red-button" onclick="changeColorToRed('left-division')">RED</button>
+          <button class="blue-button" onclick="changeColorToBlue('left-division')">BLUE</button>
+          <button class="green-button" onclick="changeColorToGreen('left-division')">GREEN</button>
+        </div>
+        <div class="arrows-division">
+          <button onclick="onClickMoveLeft('left-division')" class="img-button"><img src="assets/left-arrow.png"></button>
+          <button onclick="onClickMoveRight('left-division')" class="img-button"><img src="assets/right-arrow.png"></button>
+          <button onclick="onClickMoveUp('left-division')" class="img-button"><img src="assets/up-arrow.png"></button>
+          <button onclick="onClickMoveDown('left-division')" class="img-button"><img src="assets/down-arrow.png"></button>
+        </div>
+
+      </div>
+      <div id="right-division" class="flex-item flex-container-column">
+        <div id="top-right-division" class="flex-container-right-divisions default-background-top">
+          <div class="buttons-division">
+            <button class="red-button" onclick="changeColorToRed('top-right-division')">RED</button>
+            <button class="blue-button" onclick="changeColorToBlue('top-right-division')">BLUE</button>
+            <button class="green-button" onclick="changeColorToGreen('top-right-division')">GREEN</button>
+          </div>
+          <div class="arrows-division-right-division">
+            <button class="img-button"><img src="assets/up-arrow.png"></button>
+            <button onclick="onClickSwapDown('top-right-division','middle-right-division')" class="img-button"><img src="assets/down-arrow.png"></button>
+          </div>
+
+        </div>
+        <div id="middle-right-division" class="flex-container-right-divisions default-background-middle">
+          <div class="buttons-division">
+            <button class="red-button" onclick="changeColorToRed('middle-right-division')">RED</button>
+            <button class="blue-button" onclick="changeColorToBlue('middle-right-division')">BLUE</button>
+            <button class="green-button" onclick="changeColorToGreen('middle-right-division')">GREEN</button>
+          </div>
+          <div class="arrows-division-right-division">
+            <button onclick="onClickSwapUp('middle-right-division','top-right-division')" class="img-button"><img src="assets/up-arrow.png"></button>
+            <button onclick="onClickSwapDown('middle-right-division','bottom-right-division')" class="img-button"><img src="assets/down-arrow.png"></button>
+          </div>
+
+        </div>
+        <div id="bottom-right-division" class="flex-container-right-divisions default-background-bottom">
+          <div class="buttons-division">
+            <button class="red-button" onclick="changeColorToRed('bottom-right-division')">RED</button>
+            <button class="blue-button" onclick="changeColorToBlue('bottom-right-division')">BLUE</button>
+            <button class="green-button" onclick="changeColorToGreen('bottom-right-division')">GREEN</button>
+          </div>
+          <div class="arrows-division-right-division">
+            <button onclick="onClickSwapUp('bottom-right-division','middle-right-division')" class="img-button"><img src="assets/up-arrow.png"></button>
+            <button class="img-button"><img src="assets/down-arrow.png"></button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

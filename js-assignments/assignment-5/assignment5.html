@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device - width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+	</head>
+
+
+	<body id="console-root">
+		<script src="https://tap.ibhubs.in/utils/console.js"></script>
+		<!--<script type="text/javascript">
+			function greatestNumber(n1, n2) {
+				if (n1 > n2) {
+					console.log(n1);
+				}
+				else {
+					console.log(n2);
+				}
+			}
+			greatestNumber(5, 6);
+		</script>-->
+		<!--<script type="text/javascript">
+			function greatestNumber(n1, n2) {
+				if (n1 < n2) {
+					console.log(n1);
+				}
+				else {
+					console.log(n2);
+				}
+			}
+			greatestNumber(5, 6);
+		</script>-->
+		<!--<script type="text/javascript">
+			function pedestrianGuide(trafficLight) {
+				switch (trafficLight) {
+					case "red":
+						console.log("Do not cross");
+						break;
+					case "green":
+						console.log("safe to cross");
+						break;
+					case "orange":
+						console.log("cross only if it is safe");
+						break;
+					default:
+						console.log("Hola1 You are not in the junction");
+
+				}
+			}
+			pedestrianGuide("red");
+			pedestrianGuide("green");
+			pedestrianGuide("orange");
+			pedestrianGuide();
+		</script>-->
+		<!--<script type="text/javascript">
+			function comparison(n1, n2) {
+				if (n1 == n2 && typeof n1 == typeof n2) {
+					console.log("Both are equal");
+				}
+				else {
+					console.log("Not equal");
+				}
+			}
+			comparison(1, -1);
+		</script>-->
+		<!--<script type="text/javascript">
+			function isPositiveNumber(number) {
+				if (number > 0) {
+					console.log("true");
+				}
+				else {
+					console.log("false");
+				}
+			}
+			isPositiveNumber(-1);
+			isPositiveNumber(1);
+			isPositiveNumber(0);
+		</script>-->
+		<!--<script type="text/javascript">
+			function getGrade(marks) {
+				if (marks < 0 || marks > 100) {
+					return "Invalid marks";
+				}
+				else if (marks < 35) {
+					return "Fail";
+				}
+				else if (marks <= 50) {
+					return "D";
+				}
+				else if (marks <= 60) {
+					return "C";
+				}
+				else if (marks <= 70) {
+					return "B";
+				}
+				else if (marks <= 80) {
+					return "A";
+				}
+				else {
+					return "Distinction";
+				}
+			}
+			console.log(getGrade(10));
+			console.log(getGrade(-20));
+			console.log(getGrade(40));
+			console.log(getGrade(60));
+			console.log(getGrade(90));
+		</script>-->
+		<!--<script type="text/javascript">
+			function typeOfInput(input) {
+				switch (typeof input) {
+					case "number":
+						console.log("type is number");
+						break;
+					case "string":
+						console.log("type is string");
+						break;
+					case "undefined":
+						console.log("type is undefined");
+						break;
+					case "boolean":
+						console.log("type is boolean");
+						break;
+					default:
+						console.log("type is object");
+				}
+			}
+			typeOfInput(10);
+			typeOfInput("name");
+			typeOfInput();
+			typeOfInput(true);
+			typeOfInput(null);
+		</script>-->
+		<!--<script type="text/javascript">
+			function multiple(number) {
+				if (number % 4 == 0 || number % 5 == 0) {
+					return true;
+				}
+				else {
+					return false;
+				}
+			}
+			console.log(multiple(13));
+			console.log(multiple(5));
+		</script>-->
+		<!--<script type="text/javascript">
+			function isAlphabet(character) {
+
+				let pattern = /^[A-Za-z]$/;
+				if (character.match(pattern)) {
+					return true;
+				}
+				else {
+					return false;
+
+				}
+			}
+
+			function printVowel() {
+				console.log("Vowel");
+			}
+
+			function isVowelOrContant(character) {
+				if (isAlphabet(character)) {
+					let pattern = /^[aeiouAEIOU]$/;
+					if (character.match(pattern)) {
+						printVowel();
+					}
+					else {
+						console.log("Consonant");
+					}
+				}
+				else {
+					console.log("Invalid input");
+				}
+			}
+			isVowelOrContant('A');
+			isVowelOrContant('r');
+			isVowelOrContant('asd');
+		</script>-->
+		<!--<script type="text/javascript">
+			function isEven(number) {
+				return number % 2 == 0 ? "Even" : "Odd";
+			}
+			console.log(isEven(7));
+			console.log(isEven(10));
+		</script>-->
+		<!--<script type="text/javascript">
+			function calculateGcd(number1, number2) {
+				if (number2 % number1 == 0) {
+					console.log(number2);
+				}
+				else {
+					calculateGcd(number2, number2 % number1);
+				}
+			}
+			calculateGcd(24, 60);
+		</script>-->
+		<!--<script type="text/javascript">
+			function countNumberOfDigits(number1) {
+				let count = 0;
+				while (number1 > 0) {
+					number1 = Math.floor(number1 / 10);
+					count++;
+				}
+				console.log(count);
+			}
+			countNumberOfDigits(1234);
+			countNumberOfDigits(123);
+			countNumberOfDigits(12);
+		</script>-->
+		<!--<script type="text/javascript">
+			function sumOfDigits(number1) {
+				let count = 0;
+				while (number1 > 0) {
+					count = count + Math.floor(number1 % 10);
+					number1 = Math.floor(number1 / 10);
+				}
+				console.log(count);
+			}
+			sumOfDigits(1234);
+			sumOfDigits(123);
+			sumOfDigits(12);
+		</script>-->
+		<!--<script type="text/javascript">
+			function factorialOfNumber(number) {
+				let fact = 1;
+				while (number > 0) {
+					fact = fact * number;
+					number = number - 1;
+				}
+				console.log(fact);
+			}
+			factorialOfNumber(10);
+			factorialOfNumber(6);
+		</script>-->
+		<!--<script type="text/javascript">
+			function isLeapYear(year) {
+				if ((year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))) {
+					console.log("Leap Year");
+				}
+				else {
+					console.log("Not a leap year");
+				}
+			}
+			isLeapYear(2012);
+			isLeapYear(2019);
+			isLeapYear(2004);
+			isLeapYear(1900);
+			isLeapYear(1904);
+		</script>-->
+		<!--<script type="text/javascript">
+			function isPerfectNumber(number) {
+				let sum = 0;
+				for (let i = 1; i <= (Math.floor(number / 2)); i++) {
+					if (number % i == 0) {
+						sum = sum + i;
+					}
+				}
+				if (sum == number) {
+					console.log("Perfect Number");
+				}
+				else {
+					console.log("Not a Perfect Number");
+				}
+			}
+			isPerfectNumber(6);
+			isPerfectNumber(15);
+			isPerfectNumber(28);
+		</script>-->
+		<!--<script type="text/javascript">
+			function FactorsOfNumber(number) {
+				let factors_array = [];
+				for (let i = 1; i <= number; i++) {
+					if (number % i == 0) {
+						factors_array.push(i);
+					}
+				}
+				console.log(factors_array);
+
+			}
+			FactorsOfNumber(6);
+			FactorsOfNumber(15);
+			FactorsOfNumber(28);
+		</script>-->
+		<!--<script type="text/javascript">
+			function getSmallestNumberFromArray(array) {
+				let smallest_number = array[0];
+				for (let i = 0; i < array.length; i++) {
+					if (smallest_number > array[i]) {
+						smallest_number = array[i];
+					}
+				}
+				console.log(smallest_number);
+			}
+			getSmallestNumberFromArray([3, 6, 4, 7, 9, 2]);
+			getSmallestNumberFromArray([35, 43, 778, 12, 8, 6]);
+		</script>-->
+		<!--<script type="text/javascript">
+			function getLargestNumberFromArray(array) {
+				let largest_number = array[0];
+				for (let i = 0; i < array.length; i++) {
+					if (largest_number < array[i]) {
+						largest_number = array[i];
+					}
+				}
+				console.log(largest_number);
+			}
+			getLargestNumberFromArray([3, 6, 4, 7, 9, 2]);
+			getLargestNumberFromArray([35, 43, 778, 12, 8, 6]);
+		</script>-->
+		<!--<script type="text/javascript">
+			function sumOfElements(array) {
+				let sum = 0;
+				for (let i = 0; i < array.length; i++) {
+					sum = sum + array[i];
+				}
+				console.log(sum);
+			}
+			sumOfElements([3, 6, 4, 7, 9, 2]);
+			sumOfElements([35, 43, 778, 12, 8, 6]);
+		</script>-->
+		<!--<script type="text/javascript">
+			function countNumberOfOddNumbers(array) {
+				let oddnumber_count = 0;
+				for (let i = 0; i < array.length; i++) {
+					if (array[i] % 2 != 0) {
+						oddnumber_count++;
+					}
+				}
+				console.log(oddnumber_count);
+			}
+			countNumberOfOddNumbers([3, 6, 4, 7, 9, 2]);
+			countNumberOfOddNumbers([35, 43, 778, 12, 8, 6]);
+		</script>-->
+		<!--<script type="text/javascript">
+			function countNumberOfEvenNumbers(array) {
+				let evennumber_count = 0;
+				for (let i = 0; i < array.length; i++) {
+					if (array[i] % 2 == 0) {
+						evennumber_count++;
+					}
+				}
+				console.log(evennumber_count);
+			}
+			countNumberOfEvenNumbers([3, 6, 4, 7, 9, 2]);
+			countNumberOfEvenNumbers([35, 43, 778, 12, 8, 6]);
+		</script>-->
+		<!--<script type="text/javascript">
+			function isEmptyObject(object) {
+				if (Object.keys(object).length) {
+					console.log("true");
+				}
+				else {
+					console.log("false");
+				}
+			}
+			let object1 = {
+				name: "shruthi",
+				id: "R151515"
+			};
+
+			let object2 = {};
+			isEmptyObject(object1);
+			isEmptyObject(object2);
+		</script>-->
+		<!--<script type="text/javascript">
+			function displayPropertyWithValue(object) {
+				for (let [key, value] of Object.entries(object)) {
+					console.log(`${key} ${value}`);
+				}
+				//console.log(JSON.stringify(object));
+				//console.log(object.entries())
+			}
+			let object1 = {
+				name: "shruthi",
+				id: "R151515"
+			};
+
+			let object2 = {
+				name: "shruthi"
+			};
+			displayPropertyWithValue(object1);
+			displayPropertyWithValue(object2);
+		</script>-->
+		<!--<script type="text/javascript">
+			function getAllPropertyNames(object) {
+				console.log(Object.keys(object));
+			}
+			let object1 = {
+				name: "shruthi",
+				id: "R151515"
+			};
+
+			let object2 = {
+				name: "shruthi"
+			};
+			getAllPropertyNames(object1);
+			getAllPropertyNames(object2);
+		</script>-->
+		<!--<script type="text/javascript">
+			function getArrayLength(array) {
+				console.log((array.length));
+			}
+			getArrayLength([1, 2, 3, 4]);
+			getArrayLength([10, 23, 23, 1, 2, 3, 4]);
+			getArrayLength([]);
+		</script>-->
+		<!--<script type="text/javascript">
+			function addAnElement(array, element) {
+				array.push(element);
+				console.log(array);
+			}
+			addAnElement([1, 2, 3, 4], 123);
+			addAnElement([10, 23, 23, 1, 2, 3, 4], 213);
+			addAnElement(['a', 'r', 't'], 's');
+		</script>-->
+		<!--<script type="text/javascript">
+			function removeLastElement(array) {
+				console.log(array.pop());
+
+			}
+			removeLastElement([1, 2, 3, 4]);
+			removeLastElement([10, 23, 23, 1, 2, 3, [4, 4, 5, 6]]);
+			removeLastElement(['a', 'r', 't']);
+		</script>-->
+		<!--<script type="text/javascript">
+			function removeElementsFromArray(array, startIndex, deleteCount) {
+				array.splice(startIndex, deleteCount);
+				console.log(array);
+			}
+			removeElementsFromArray([1, 2, 3, 4], 0, 2);
+			removeElementsFromArray([10, 23, 23, 1, 2, 3, 4], 1, 2);
+			removeElementsFromArray(['a', 'r', 't'], 0, 4);
+		</script>-->
+		<!--<script type="text/javascript">
+			function getSubArray(array, startIndex, endIndex) {
+				console.log(array.slice(startIndex, endIndex));
+			}
+			getSubArray([1, 2, 3, 4], 0, 2);
+			getSubArray([10, 23, 23, 1, 2, 3, 4], 1, 2);
+			getSubArray(['a', 'r', 't'], 0, 4);
+		</script>-->
+		<!--<script type="text/javascript">
+			let myArray = [1, 1.4, 2, 3, 122, ["a", "b", "f"], true, false, [0]];
+
+			myArray.push(10);
+			myArray.splice(0, 3);
+			myArray.splice(0, 3, 0, 1, 2);
+			myArray.splice(1, 1);
+			myArray.pop();
+			console.log(myArray);
+		</script>-->
+		<!--<script type="text/javascript">
+			function addProperty(object, key, value) {
+				object[key] = value;
+				console.log(object);
+			}
+			let object1 = {
+				name: "shruthi",
+				id: "R151515"
+			};
+
+			let object2 = {
+				name: "shruthi"
+			};
+			addProperty(object1, "height", 5);
+			addProperty(object2, "id", 151515);
+		</script>-->
+
+
+		<!--<script type="text/javascript">
+			function updateProperty(object, key, value) {
+				object[key] = value;
+				console.log(object);
+			}
+			let object1 = {
+				a: 1,
+				b: 2,
+				c: 3
+			};
+			let object2 = {
+				one: 1,
+				two: 2,
+				three: 3
+			};
+			updateProperty(object1, "c", 4);
+			updateProperty(object2, "three", 6);
+		</script>-->
+		<!--<script type="text/javascript">
+			function deleteProperty(object, key) {
+				delete object[key]
+				console.log(object);
+			}
+			let object1 = {
+				a: 1,
+				b: 2,
+				c: 3
+			};
+			let object2 = {
+				one: 1,
+				two: 2,
+				three: 3
+			};
+			deleteProperty(object1, "c");
+			deleteProperty(object2, "three");
+		</script>-->
+		<!--<script type="text/javascript">
+			function addObjectsToAnArray(array, array_of_objects) {
+				console.log(array.concat(array_of_objects));
+			}
+			addObjectsToAnArray([1, 2, 3], [{ a: 1, b: 2, c: 3 }, { d: 4 }, { e: 5 }]);
+		</script>-->
+		<!--<script type="text/javascript">
+			function addProperty(object) {
+				object.data.friends.push("Ram");
+				console.log(object);
+			}
+			let user = {
+				name: 'Kenneth',
+				age: 28,
+				data: {
+					username: 'kennethCodesAllDay',
+					joinDate: 'March 26, 2016',
+					organization: 'facebook',
+					friends: ['Sam', 'Kira', 'Tomo'],
+					location: {
+						city: 'San Francisco',
+						state: 'CA',
+						country: 'USA'
+					}
+				}
+			};
+			addProperty(user);
+		</script>-->
+		<!--<script type="text/javascript">
+			function addProperty(object) {
+				object.data.friends.push("Ram");
+				object.data.friends.splice(4, 3, "John", "Weisly", "Robin");
+				console.log(object);
+			}
+			let user = {
+				name: 'Kenneth',
+				age: 28,
+				data: {
+					username: 'kennethCodesAllDay',
+					joinDate: 'March 26, 2016',
+					organization: 'facebook',
+					friends: ['Sam', 'Kira', 'Tomo'],
+					location: {
+						city: 'San Francisco',
+						state: 'CA',
+						country: 'USA'
+					}
+				}
+			};
+			addProperty(user);
+		</script>-->
+		<!--<script type="text/javascript">
+			let myObject = {
+				height: 43,
+				width: 22,
+				rectangle: [22, 33],
+			};
+			myObject.addition = function(array) {
+				let sum = 0;
+				for (let i = 0; i < array.length; i++) {
+					sum = sum + array[i];
+				}
+				console.log(sum);
+			};
+			console.log(myObject);
+			myObject.addition([1, 2, 3, 4]);
+		</script>-->
+		<!--<script type="text/javascript">
+			const a = 5.0;
+			try {
+				a = 9;
+				console.log(a);
+			}
+			catch (b) {
+				console.log("Invalid");
+			}
+		</script>-->
+		<!--<script type="text/javascript">
+			alert(null == undefined);
+			alert(null === undefined);
+		</script>-->
+		<!--<script type="text/javascript">
+			let myFunction = () => {
+				let headingObject = document.getElementById("demo");
+				headingObject.parentNode.removeChild(headingObject);
+			};
+		</script>
+
+		<h1 id="demo">My Page</h1>
+		<button onclick="myFunction()">submit</button>-->
+		<!--<p id="p1">Hello World</p>
+		<p id="p2">Hello World2</p>
+		<script type="text/javascript">
+			document.getElementById("p2").style.color = "blue";
+			document.getElementById("p2").style.fontSize = "30px";
+			document.getElementById("p2").style.fontStyle = "Italic";
+		</script>-->
+		<p id="demo">Hello World</p>
+		<button onclick="myFunction()">Submit</button>
+		<script type="text/javascript">
+			document.getElementById("demo").style.fontSize = "30px";
+			let off = 0;
+			let myFunction = () => {
+				if (off === 0) {
+					let element = document.getElementById("demo");
+					element.parentElement.removeChild(element);
+				}
+				else {
+					let element = document.getElementById("demo");
+					element.parentElement.appendChild(element);
+				}
+
+			}
+		</script>
+
+
+
+	</body>
+
+</html>

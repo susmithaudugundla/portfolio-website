@@ -1,0 +1,36 @@
+.output {
+	background: black;
+	color: white;
+	font-size: 40px;
+	height: 90px;
+	width: 100%;
+	overflow: hidden;
+	word-wrap: break-word;
+	text-align:right;
+}
+
+.flex-item-1 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 77%;
+}
+
+button {
+	background: white;
+	border: 1px solid black;
+	height: 50px;
+	width: 25%;
+	flex-grow: 1;
+	margin: 5px;
+	font-size: 30px;
+}
+
+.button-margin button {
+	margin: 7px;
+}
+
+
+.flex-container {
+	display: flex;
+
+}

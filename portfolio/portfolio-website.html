@@ -11,15 +11,12 @@
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
         <title>Susmitha_Udugundla_Profile</title>
         <style type="text/css">
-            /* Centered text */
-
             .centered {
                 position: absolute;
                 top: 50%;
                 left: 35%;
                 transform: translate(-50%, -50%);
             }
-
 
             .white {
                 background: white;
@@ -30,22 +27,18 @@
 
             }
 
-
             .border12 {
                 border: 1px solid white;
             }
 
-
             body {
-                background-image: linear-gradient(red, green, blue);
+                font-family: 'Comfortaa';
                 background: #8ec8e6;
             }
-
 
             .text-black {
                 color: black;
             }
-
 
             .col-h {
                 height: 200px;
@@ -56,13 +49,10 @@
                 border: 2px solid #38abcf;
             }
 
-
             .size img {
                 width: 20px;
                 height: auto;
             }
-
-
 
             .back-blue {
                 background: #38abcf;
@@ -83,7 +73,6 @@
                 .pad-left {
                     padding-left: 30px;
                 }
-
             }
 
             @media(min-width:320px) {
@@ -141,7 +130,6 @@
             .dis1 {
                 display: inline-block;
                 width: 20%;
-
             }
 
             .pro-back {
@@ -165,6 +153,7 @@
                 background-repeat: no-repeat;
                 /*background-position: center;*/
                 background-size: cover;
+                object-fit: cover;
             }
 
             hr {
@@ -185,7 +174,6 @@
                 height: 600px;
             }
 
-
             .make-items-center {
                 display: flex;
                 align-items: center;
@@ -198,7 +186,6 @@
 
             @media (min-width:320px) {
                 body {
-                    font-family: 'Comfortaa';
                     font-size: 16px;
                 }
                 .con img {
@@ -211,26 +198,22 @@
                     padding-left: 20px;
                     padding-right: 20px;
                 }
-
             }
 
             @media (min-width:576px) {
                 body {
-                    font-family: 'Comfortaa';
                     font-size: 18px;
                 }
                 .con img {
                     width: 70px;
                     height: auto;
                     filter: invert(100%);
-
                 }
 
                 .row-width {
                     padding-left: 70px;
                     padding-right: 70px;
                 }
-
             }
         </style>
     </head>
@@ -253,7 +236,7 @@
                 <div class="collapse navbar-collapse text-color" id="navbarSupportedContent">
                     <ul class="navbar-nav text-color">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#about">About</a>
@@ -280,7 +263,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="container-fluid imgage1">
+        <div id="home" class="container-fluid imgage1">
             <div class="row custom-height">
                 <div class="col-12 ">
                     <div class="centered">

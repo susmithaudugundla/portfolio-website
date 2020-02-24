@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Weather</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
+    <script src="../bootstrap/jquery.min.js"></script>
+    <script src="../bootstrap/popper.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+
+
+    <style type="text/css">
+      .back {
+        border-radius: 20px;
+        height: 70vh;
+        width: 45%;
+        background-image: url('assets/background-image.jpeg');
+      }
+
+      .back2 {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        border-radius: 20px;
+        height: 70vh;
+        width: 100%;
+        background-image: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+        opacity: 0.9;
+
+
+      }
+
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      body {
+        color: white;
+      }
+
+      .back-black {
+        background: black;
+        height: 70vh;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        justify-content: space-around;
+      }
+
+      .flex-black {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .margin {
+        justify-content: space-around;
+      }
+
+      .back-white {
+        color: black;
+        background: white;
+        border-radius: 15px;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .back-white img {
+        filter: invert(100%);
+      }
+
+      .flex-center {
+        height: 50px;
+        background-image: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+      }
+
+      .flex-center p {
+        margin: 0px;
+      }
+
+
+      .flex-center img {
+        margin: 0px;
+        height: 20px;
+      }
+
+      .col-up,
+      col-down {
+        height: 50vh;
+
+      }
+
+      .flex-left {
+        display: flex;
+      }
+
+      .sun-size {
+        height: 40px;
+      }
+
+      .back-b {
+        background: black;
+        border-radius: 20px;
+      }
+
+      .margin div {
+        text-align: center;
+      }
+
+      .loc-size {
+        height: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex back-b">
+      <div class="back image">
+        <div class="back2 container">
+
+          <div class="col-up linear">
+            <h1>Friday</h1>
+            <h4>31 Jan 2020</h4>
+            <div class="flex-left">
+              <img class="loc-size" src="assets/location.svg"></img>
+              <h5>Kurnool</h5>
+            </div>
+          </div>
+
+          <div class="col-down">
+            <img class="sun-size" src="assets/sun-white.svg"></img>
+            <h1>29&#8451;</h1>
+            <h3>Sunny</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="back-black container">
+        <div>
+          <div class="flex-black">
+            <p>Precipitation</p>
+            <p>0%</p>
+          </div>
+          <div class="flex-black">
+            <p>Humidity</p>
+            <p>35%</p>
+          </div>
+          <div class="flex-black">
+            <p>Wind</p>
+            <p>0 K/h</p>
+          </div>
+        </div>
+
+        <div class="flex margin">
+          <div class="back-white">
+            <img src="assets/sun-white.svg"></img>
+            <p>Sat</p>
+            <p>29&#8451;</p>
+          </div>
+          <div>
+            <img src="assets/cloud.svg"></img>
+            <p>Sun</p>
+            <p>21&#8451;</p>
+          </div>
+          <div>
+            <img src="assets/cloud-snow.svg"></img>
+            <p>Mon</p>
+            <p>08&#8451;</p>
+          </div>
+          <div>
+            <img src="assets/cloud-rain.svg"></img>
+            <p>Tue</p>
+            <p>18&#8451;</p>
+          </div>
+        </div>
+
+        <div class="flex-center">
+          <img src="assets/location.svg"></img>
+          <p>Change location</p>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!--<script type="text/javascript">
+			function find1(a) {
+				let l = a.length;
+				a.push(l);
+				return a;
+			}
+			let arr = [1, 2, [5, 6, 7], -3, "hello"];
+			arr[7] = 10;
+			let a = [
+				["iBHUBS"], 7, ['A', -1, 3.5, 0], 5, "JS"
+			];
+			a[2][2] = 10;
+			a[0].pop();
+			a[2].push(5);
+			a.pop();
+			a[7] = "hello";
+			//alert(a);
+			//alert(find1(a));
+
+			let tyre1 = {
+				brand: "MRF",
+				type: "Tube less",
+				rimDiameter: "15 Inches"
+			};
+			let tyre2 = {
+				brand: "MRF",
+				type: "Tube less",
+				rimDiameter: "16 Inches"
+			};
+			let tyre3 = {
+				brand: "MRF",
+				type: "Tube less",
+				rimDiameter: "17 Inches"
+			};
+			let tyre4 = {
+				brand: "MRF",
+				type: "Tube less",
+				rimDiameter: "18 Inches"
+			};
+			let car = {
+				color: "white",
+				weight: 150,
+				fuel_type: "petrol",
+				tyrelist: [tyre1, tyre2, tyre3, tyre4],
+				start() {
+					return "started";
+				},
+				stop() {
+					return "stopped";
+				}
+			};
+
+			function s() {
+				return "stopped";
+			}
+			let car1 = {
+				stop: s()
+			};
+			let car2 = {
+				stop: s()
+			};
+			//alert(car1.stop);
+			//alert(car2.stop);
+			delete car["weight"];
+			car.model = "volvo";
+			//alert(car["weight"]);
+
+			//car.tyre = tyre;
+			alert(car.hasOwnProperty("color"));
+			//alert(tyre.brand);
+		</script>-->
+		<script type="text/javascript">
+			function start() {
+				return "started";
+			}
+
+			function stop() {
+				return "stopped";
+			}
+
+			function b() {
+				return "breaked";
+			}
+			let person = {
+				fname: "Jhon",
+				lname: "Jacob",
+				age: 30,
+				gender: "Male"
+			};
+			let bus = {
+				owner: "Kaltada Travels",
+				color: "Red",
+				type: "AC",
+				seating_capacity: 45,
+				start: start(),
+				stop: stop(),
+				driver: person
+			};
+			bus.driver.experience = "12 years";
+			bus.owner = "Morning star";
+			delete bus.driver.age;
+			bus.driver.name = bus.driver.fname + bus.driver.lname;
+			bus.break = b();
+			bus.passengers = ["Satya Nadella", "Tim cook", "Jafi Bazos", "Sundar Pichai", "Mark Jukarburg", "Bob Swan"];
+			bus.passengers[0].age = 17;
+			bus.passengers[0].gender = "Male";
+			alert(bus.passengers[0].age);
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>

@@ -1,0 +1,54 @@
+.flex-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-container-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-control {
+	margin-bottom: 15px;
+	background-color: #f2f2f2;
+}
+
+
+.margin-between {
+	margin-right: 15px;
+}
+
+.fname,
+.lname {
+	flex-grow: 1;
+}
+
+p {
+	color: red;
+	font-size: 12px;
+}
+
+body {
+	background-image: linear-gradient(90deg, #8833e8, #33e8a3);
+}
+
+form {
+	background-color: white;
+	margin-bottom: 30px;
+}
+
+.btn {
+	border: 0px;
+	color: white;
+	background: blue;
+	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+
+.justify-content-center {
+	margin-top: 15px;
+	display: flex;
+
+}

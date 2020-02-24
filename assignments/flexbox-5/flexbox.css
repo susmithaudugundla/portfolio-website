@@ -1,0 +1,34 @@
+body {
+  background-color: #e0e0e0;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexbox div {
+  flex-shrink: 1;
+  height: 100px;
+}
+
+.orange {
+  background: orange;
+  width: 100%;
+  max-width: 768px;
+  min-width: 256px;
+}
+
+.green {
+  background: brown;
+  width: 256px;
+  flex-grow: 1;
+}
+
+.blue {
+  background: green;
+  width: 330px;
+  flex-grow: 1;
+}

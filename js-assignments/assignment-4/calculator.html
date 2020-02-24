@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+
+  <body id="console-root">
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <script src="calculator.js"></script>
+    <div style="border:1px solid black">
+      <div id="demo" class="output">0</div>
+
+      <div class="flex-container button-margin">
+
+        <button onclick="onClickShowOutput('+')">+</button>
+        <button onclick="onClickShowOutput('-')">-</button>
+        <button onclick="onClickShowOutput('*')">*</button>
+        <button onclick="onClickShowOutput('/')">/</button>
+
+      </div>
+      <div class="flex-container">
+        <div class="flex-item-1">
+
+          <button onclick="onClickShowOutput(9)">9</button>
+          <button onclick="onClickShowOutput(8)">8</button>
+          <button onclick="onClickShowOutput(7)">7</button>
+          <button onclick="onClickShowOutput(6)">6</button>
+
+          <button onclick="onClickShowOutput(5)">5</button>
+          <button onclick="onClickShowOutput(4)">4</button>
+          <button onclick="onClickShowOutput(3)">3</button>
+          <button onclick="onClickShowOutput(2)">2</button>
+
+          <button onclick="onClickShowOutput(1)">1</button>
+          <button onclick="onClickShowOutput(0)">0</button>
+          <button onclick="onClickShowOutput('.')">.</button>
+          <button style="background:orange" onclick="onClickShowOutput('AC')">AC</button>
+        </div>
+        <button style="height:auto;background:blue" onclick="getExpressionOutput() ">=</button>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

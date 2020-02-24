@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css" />
+    <script src="../../bootstrap/jquery.min.js"></script>
+    <script src="../../bootstrap/popper.min.js"></script>
+    <script src="../../bootstrap/bootstrap.min.js"></script>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css" />
+
+  </head>
+
+  <body id="console-root">
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <div class="justify-content-center">
+      <label for="selectingTheme" style="color:white">Select your favourite colors</label>
+      <input type="color" name="favcolor" id="favcolor1" value="#8833e8" />
+      <input type="color" name="favcolor" id="favcolor2" value="#33e8a3" />
+    </div>
+    <div class="container">
+      <form class="flex-container" onsubmit="consoleUserDetails(event)" oninput="x.value=parseInt(a.value)">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <caption>Please fill in this form to create an account</caption>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="flex-container-row">
+            <div class="margin-between fname">
+              <input type="text" class="form-control" id="fname" name="fname" pattern="^[A-Za-z]+$" placeholder="First Name" required/>
+              <p id="fnameRequired"></p>
+            </div>
+            <div class="lname">
+              <input type="text " class="form-control " id="lname" name="lname " placeholder="Last Name" pattern="^[A-Za-z]+$" required/>
+              <p id="lnameRequired"></p>
+            </div>
+          </div>
+          <input type="number " class="form-control " name="number " id="number" pattern="^[6789][0-9]{9}$" placeholder="Mobile Number" required />
+          <p id="numberRequired"></p>
+          <input type="email " class="form-control " name="email " id="mail" placeholder="Email" required/>
+          <p id="mailRequired"></p>
+          <input type="password" class="form-control " name="password " placeholder="Password" id="password" pattern="^.*[A-Z].*[a-z].*$" required/>
+          <p id="passwordRequired"></p>
+          <input type="password" class="form-control " name="confirmPassword " id="confirmPassword" placeholder="Confirm Password" pattern=".*[A-Za-z].*" required/>
+          <p id="confirmPasswordRequired"></p>
+          <div class="flex-container-row">
+            <label for="selectYourGender">Select your gender</label>
+            <div class="form-group">
+              <input type="radio" id="radio" name="gender" value="male" required>
+              <label for="male">Male</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" id="radio" name="gender" value="female" required>
+              <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" id="radio" name="gender" value="others" required>
+              <label for="others">Others</label>
+            </div>
+          </div>
+          <div class="flex-container-row">
+            <div class="form-group">
+              <label for="selectBranch">Select your branch</label>
+              <select name="branches" id="branch">
+              <option value="CSE">CSE</option>
+              <option value="ECE">ECE</option>
+              <option value="CIVIL">CIVIL</option>
+              <option value="MECH">MECH</option>
+            </select>
+            </div>
+            <div class="form-group">
+              <label for="birthday">DOB</label>
+              <input type="date" name="birthday" id="date" min="2002-01-01" value="2001-12-31" required />
+              <p id="dateRequired"></p>
+            </div>
+          </div>
+          <div class="flex-container-row form-group">
+            <label for="address">Enter your address</label>
+            <textarea name="textarea" rows="5" cols="40" id="address" placeholder="Type your address here!.." style="width:60%;flex-grow:1"></textarea>
+          </div>
+          <div class="flex-container-row form-group">
+            <label for="typingspeed">Set your typing speed</label>
+            <input type="range" id="a" name="a" value="50" style="flex-grow:1">
+            <output name="x" for="a b"></output>
+          </div>
+          <div class="flex-container-row">
+            <div class="form-group">
+              <input type="checkbox" id="termsAndConditions" name="terms" required>
+              <label for="agree"> I accept the <span style="color:blue">Terms of Use</span> & <span style="color:blue"> Privacy Policy</span></label>
+              <p id="termsAndConditionsRequired">* Required field</p>
+            </div>
+          </div>
+          <div style="text-align:center">
+            <button class="btn info" id="submitButton">Sign Up</button>
+          </div>
+      </form>
+      </div>
+    </div>
+    <script src="sign-up.js"></script>
+  </body>
+
+</html>

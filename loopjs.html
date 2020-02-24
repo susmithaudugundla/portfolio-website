@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+	</head>
+
+	<body>
+		<!--<script type="text/javascript">
+			let countOfVotersInIndia = 0;
+			let countOfVotersInAmerica = 0;
+			let array = [{ name: "susmi", age: 20 }, { name: "preethi", age: 16 }, { name: "vineetha", age: 17 }, { name: "Veereshamma", age: 19 }];
+			/*function getCountofEligibleVoters() {
+				
+				for (let i of array) {
+					if (i.age >= 16) {
+						countOfVotersInAmerica++;
+					}
+					if (i.age >= 18) {
+						countOfVotersInIndia++;
+					}
+				}
+			}
+			getCountofEligibleVoters()*/
+			function getCountofEligibleVoters(array, isEligible) {
+				let count = 0;
+				for (let i = 0; i < array.length; i++) {
+					if (isEligible(array[i].age)) {
+						count++;
+					}
+				}
+				return count;
+			}
+
+			function isEligibleToVoteInIndia(age) {
+				return age >= 18;
+			}
+
+			function isEligibleToVoteInAmerica(age) {
+				return age >= 16;
+			}
+			alert(getCountofEligibleVoters(array, isEligibleToVoteInIndia));
+			alert(getCountofEligibleVoters(array, isEligibleToVoteInAmerica));
+		</script>-->
+		<!--<script type="text/javascript">
+			let array = [10, 23, 20, 19, 4, 6];
+
+			function isEligible(age) {
+				return age >= 18;
+			}
+			let count = array.filter(isEligible);
+			alert(count);
+		</script>-->
+		<!--<script type="text/javascript">
+			let array = [{ name: "susmi", age: 20 }, { name: "preethi", age: 16 }, { name: "vineetha", age: 17 }, { name: "Veereshamma", age: 19 }];
+			let eligibleVotersInIndia = array.filter(isEligible);
+			function isEligible(array) {
+				return array.age >= 18;
+			}
+			alert(eligibleVotersInIndia.length);
+		</script>-->
+		<!--<script type="text/javascript">
+			let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+			/*function removeOdd(number) {
+				return number % 2 != 0;
+			}*/
+			alert(array.filter(number => { return number % 2 !== 0; }));
+		</script>-->
+		<!--<script type="text/javascript">
+			let array = [{ name: "susmi", age: 20 }, { name: "preethi", age: 16 }, { name: "vineetha", age: 17 }, { name: "Veereshamma", age: 19 }];
+			let names = array.map(person => {
+				if (person.age >= 18) {
+					return person.name;
+				}
+			});
+			alert(names);
+		</script>-->
+		<!--<script type="text/javascript">
+			let ages = [32, 43, 16, 35];
+			ages.forEach(getAge);
+
+			function getAge(item, index, ages) {
+				ages[index] = item * 5;
+			}
+			alert(ages);
+		</script>-->
+		<!--<script type="text/javascript">
+			let ages = [32, 43, 16, 35];
+
+			function increamentAgeBy2(age) {
+				return (age = age + 2);
+			}
+			let newAges = ages.map(increamentAgeBy2);
+			alert(newAges);
+		</script>-->
+		<!--<script type="text/javascript">
+			let numbers = [3, 5, 6, 7, 8];
+
+			function multiplyNumberBy2(number) {
+				return (number = number * 2);
+			}
+			let newNumbers = numbers.map(multiplyNumberBy2);
+			alert(newNumbers);
+		</script>-->
+		<!--<script type="text/javascript">
+			let ages = [20, 33, 16, 46];
+
+			function checkAges(age) {
+				return age > 20;
+			}
+			let age = ages.find(checkAges);
+			alert(age);
+		</script>-->
+		<!--<script type="text/javascript">
+			let array = [{ id: 1, name: "John" }, { id: 2, name: "Mary" }];
+			let names = array.find(name => name.name == "John");
+			alert(names);
+		</script>-->
+		<!--<script type="text/javascript">
+			let cat = "Meow";
+			let dog = "Woof";
+			let animals = {
+				cat,
+				dog
+			};
+			alert(animals.dog);
+			let car = {
+				color: "silver",
+			};
+			let { color } = car;
+			alert(color);
+		</script>-->
+		<!--<script type="text/javascript">
+			const teams = {
+				blue: "blue",
+				green: "green",
+				orange: "orange",
+				white: "white"
+			};
+			const { white, ...newTeam } = teams;
+			alert(newTeam.white);
+		</script>-->
+		<!--<script type="text/javascript">
+			function sumOfNumbers(firstArgument,...others) {
+				let sum = 0;
+				for (let arg of args) {
+					sum += arg;
+				}
+				return sum;
+			}
+			alert(sumOfNumbers(1, 2, 3, 4, 5));
+		</script>-->
+		<!--<script type="text/javascript">
+			let first = [1, 2, 3, 4];
+			let second = [5, 6, 7];
+			const combined = first.concat(second);
+			alert(combined);
+		</script>-->
+		<!--<script type="text/javascript">
+			let first = [1, 2, 3, 4];
+			let second = [5, 6, 7];
+			const combined = [...first, ...second];
+			alert(combined);
+		</script>-->
+		<!--<script type="text/javascript">
+			let first = [1, 2, 3, 4];
+			let second = [5, 6, 7];
+			const combined = [...first, 'a', ...second, 'b'];
+			alert(combined);
+		</script>-->
+		<!--<script type="text/javascript">
+			function sumOfNumbers(...args) {
+				let sum = 0;
+				for (let arg of args) {
+					sum += arg;
+				}
+				return sum;
+			}
+			let first = [1, 2, 3, 4, 5];
+			let second = [6, 7, 8];
+			const combined = [...first, ...second];
+			alert(sumOfNumbers(...first));
+		</script>-->
+		<script type="text/javascript">
+			const name = "iBHUBS";
+			const chars = [...name];
+			alert(chars);
+		</script>
+	</body>
+
+</html>

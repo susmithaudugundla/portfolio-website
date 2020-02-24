@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	</head>
+
+	<body>
+
+		<script type="text/javascript">
+			let mybutton = document.createElement("button");
+			mybutton.innerHTML = "submit";
+			mybutton.onclick = () => alert("Hello JS");
+			document.body.appendChild(mybutton);
+			let myImg = document.createElement("img");
+			myImg.src = "assignment-13/assets/android.png";
+			myImg.alt = "image";
+			myImg.onclick = () => alert("Image clicked");
+			document.body.appendChild(myImg);
+			let my = () => {
+				let h = document.getElementById("demo");
+				h.innerHTML = "heading";
+			};
+		</script>
+		<button onclick="alert(' Hello JS ')">Submit</button>
+		<button onclick=my()>Submit</button>
+		<h1 id="demo">This is heading.</h1>
+	</body>
+
+</html>
