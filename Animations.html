@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style type="text/css">
+			@keyframes mymove {
+				from {
+					width: 100px;
+					top: 100px;
+					height: 0px;
+
+
+				}
+				to {
+					width: 100px;
+					top: 0px;
+					height: 100px
+				}
+				/*0% {
+					top: 0px;
+					background-color: blue;
+					width: 100px;
+				}
+				50% {
+					top: 100px;
+					background-color: green;
+					width: 200px;
+				}
+				100% {
+					top: 200px;
+					background-color: orange;
+					width: 300px;
+				}*/
+			}
+
+			@keyframes down {
+				0% {
+					left: 0px;
+					top: 0px;
+					background: blue;
+				}
+				25% {
+					left: 200px;
+					top: 0px;
+					background: green;
+				}
+				50% {
+					left: 200px;
+					top: 200px;
+					background: red;
+				}
+				75% {
+					left: 0px;
+					top: 200px;
+					background: black;
+				}
+				100% {
+					left: 0px;
+					top: 0px;
+					background: blue;
+				}
+			}
+
+			@keyframes stay {
+				from {
+					top: 0px;
+				}
+				to {
+					top: 200px;
+					background: green;
+				}
+			}
+
+			/*div:hover {
+				animation-play-state: paused;
+			}*/
+
+			@keyframes excercise {
+				0% {
+					transform: rotate(0deg);
+				}
+				50% {
+					transform: rotate(200deg);
+				}
+				100% {
+					transform: rotate(0deg);
+				}
+			}
+
+			@keyframes pos {
+
+				from {
+					left: 50px;
+				}
+				to {
+					left: 0px;
+				}
+			}
+
+			div {
+				/*margin: 100px;*/
+				width: 0px;
+				height: 0px;
+				background-color: blue;
+				position: relative;
+
+				animation-duration: 2s;
+				/*animation-name: mymove;
+				animation-name: down;*/
+				/*animation-name: stay;
+				animation-duration: 5s;
+				animation-fill-mode: backwards;
+				animation-iteration-count: 1;
+				/*animation-direction: reverse;
+				animation-timing-function: ease-in;*/
+				/*width: 100px;
+				height: 20px;
+				background: yellowgreen;
+				animation-name: pos;
+				transform-origin: left;
+				position: relative;
+				animation-duration: 2s;
+				animation-delay: 1s;*/
+			}
+
+			/*p {
+				position: relative;
+				animation-name: pos;
+				animation-duration: 1s;
+			}*/
+		</style>
+	</head>
+
+	<body>
+		<div id="some">
+			<p>+</p>
+		</div>
+		<script type="text/javascript">
+			document.getElementById("some").style.animationName = "mymove";
+		</script>
+	</body>
+
+</html>

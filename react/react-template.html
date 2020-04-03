@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Including React libraries -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+<style type="text/css">
+  .username{
+    color:red;
+  }
+</style>
+    <title>ReactJS</title>
+  </head>
+
+  <body id="console-root">
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+    <div id="root"></div>
+    <!--
+        Write your HTML code here
+    -->
+
+   <!-- <script type="text/babel" src="react.js">
+    </script>-->
+    <script type="text/babel">
+    
+    const word="world";
+      const rootElement = document.getElementById("root");
+      const element =<div style={{background:"blue"}}><h1 className="username">Hello {word}</h1><br></br><p>world</p></div>;
+      const div=<div />;
+      ReactDOM.render(element, rootElement);
+    </script>
+  </body>
+
+</html>

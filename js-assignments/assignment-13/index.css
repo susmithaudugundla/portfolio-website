@@ -1,0 +1,29 @@
+h2 {
+	color: green;
+	margin: 5px;
+}
+
+p {
+	margin: 5px;
+}
+
+div {
+	margin: 10px;
+
+}
+
+.no-border {
+	border: 0px solid black;
+}
+
+select {
+	margin: 10px;
+}
+
+h1 {
+	text-align: center
+}
+
+.dataDivision {
+	background-color: white
+}

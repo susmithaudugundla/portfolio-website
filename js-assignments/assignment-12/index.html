@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ATM</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <div class="first-row">
+      <button id="deposit">Deposit</button>
+      <button id="withdraw">Withdraw</button>
+    </div>
+    <div class="second-row">
+      <button id="showBalance">Show Balance</button>
+      <button id="history">History</button>
+    </div>
+    <div class="deposit-division" id="depositDivision">
+      <div class="input">
+        <input type="text" id="depositValue" name="deposit" placeholder="enter deposit amount" />
+        <p id="depositValueError"></p>
+        <span id="depositTimer"></span>
+      </div>
+      <button id="depositBtn">Submit</button>
+    </div>
+    <div class="withdraw-division" id="withdrawDivision">
+      <div class="input">
+        <input type="text" id="withdrawValue" name="withdraw" placeholder="enter withdraw amount" />
+        <p id="withdrawValueError"></p>
+        <span id="withdrawTimer"></span>
+      </div>
+      <button id="withdrawBtn">Submi</button>
+    </div>
+    <div class="show-balance-division" id="showBalanceDivision">
+      <p>Current balance:Rs<span id="amount"></span></p>
+    </div>
+    <div class="history-division" id="historyDivision">
+      No transactions yet
+    </div>
+    <script src="index.js"></script>
+  </body>
+
+</html>

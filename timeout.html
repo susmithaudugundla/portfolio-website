@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style type="text/css">
+			p {
+				padding: 20px;
+				margin-left: 0px;
+				border: 1px solid black;
+				display: inline
+			}
+
+			button {
+				width: 100px;
+				height: 50px;
+				margin-left: 200px
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="console-root"></div>
+		<script src="https://tap.ibhubs.in/utils/console.js"></script>
+		<div>
+			<p id="red">R</p>
+			<p id="green">G</p>
+			<p id="blue">B</p>
+		</div>
+		<button id="clear">clear</button>
+		<script type="text/javascript">
+			let redEl = document.getElementById("red");
+			let greenEl = document.getElementById("green");
+			let blueEl = document.getElementById("blue");
+			let clearBtn = document.getElementById("clear");
+			redEl.style.background = "red";
+			class object {
+				constructor() {
+					this.active = "red";
+				}
+				changeBlueToRed() {
+					this.active = "red";
+					changeToRed();
+				}
+				changeRedToGreen() {
+					this.active = "green";
+					changeToGreen();
+				}
+				changeGreenToBlue() {
+					this.active = "blue";
+					changeToBlue();
+				}
+			}
+			let timer = [];
+			let activeObject = new object();
+			for (let i = 1; i <= 5; i++) {
+				let newTimer = setTimeout(() => {
+					timer.push(newTimer);
+					activeObject.changeRedToGreen();
+
+					newTimer = setTimeout(() => {
+						activeObject.changeGreenToBlue();
+						newTimer = setTimeout(() => {
+							activeObject.changeBlueToRed();
+						}, 1000)
+						timer.push(newTimer);
+					}, 1000)
+					timer.push(newTimer);
+					console.log(i)
+				}, i * 3000);
+				console.log(i);
+				timer.push(newTimer);
+
+			}
+			clearBtn.onclick = function() {
+				for (let i = 0; i < timer.length; i++) {
+					clearTimeout(timer[i]);
+				}
+				timer = [];
+			};
+
+			function changeToGreen() {
+				redEl.style.background = "#ffffff";
+				greenEl.style.background = "green";
+				console.log("green");
+				window.localStorage.setItem("object", JSON.stringify(activeObject));
+			}
+
+			function changeToBlue() {
+				greenEl.style.background = "#ffffff";
+				blueEl.style.background = "blue";
+				console.log("blue");
+				window.localStorage.setItem("object", JSON.stringify(activeObject));
+			}
+
+			function changeToRed() {
+				blueEl.style.background = "#ffffff";
+				redEl.style.background = "red";
+				console.log("red");
+				window.localStorage.setItem("object", JSON.stringify(activeObject));
+			}
+			if (window.localStorage.getItem("object") !== null) {
+				activeObject = JSON.parse(window.localStorage.getItem("object"));
+			}
+			console.log(activeObject)
+			window.localStorage.clear();
+		</script>
+		<!--<button id="btn">hello</button>
+		<button id="clear">clear</button>
+		<p id="name"></p>
+		<p id="sur-name"></p>-->
+		<!--<script type="text/javascript">
+			let btnEl = document.getElementById("btn");
+			let i = 0;
+			btnEl.onclick = function() {
+				btnEl.style.background = "green";
+				let time = setTimeout(() => {
+					btnEl.style.background = "blue"
+				}, 3000);
+				if (i === 1) {
+					clearTimeout(time);
+				}
+				i = 1;
+			}
+		</script>-->
+		<!--<script type="text/javascript">
+			let btnEl = document.getElementById("btn");
+			let clearBtn = document.getElementById("clear");
+			let timer = [];
+			btnEl.onclick = function() {
+				btnEl.style.background = "green";
+				let timerItem = setTimeout(() => {
+					btnEl.style.background = "blue";
+				}, 3000);
+				timer.push(timerItem);
+				console.log(timer);
+			};
+			clearBtn.onclick = function() {
+				timer.forEach(item => {
+					console.log(item);
+					clearTimeout(item);
+				});
+
+			};
+		</script>-->
+		<!--<script type="text/javascript">
+			let nameEl = document.getElementById("name");
+			let surnameEl = document.getElementById("surname");
+			nameEl.innerHTML = "Susmi";
+			document.write("This is \n a something")
+			let i = 5;
+			setTimeout(() => {
+				nameEl.innerHTML = "Udugundla";
+			}, 2000);
+			let time = setInterval(() => {
+				nameEl.innerHTML = i;
+				i = i - 1;
+				if (i < 0) {
+					clearInterval(time);
+				}
+
+			}, 1000);
+		</script>-->
+	</body>
+
+</html>

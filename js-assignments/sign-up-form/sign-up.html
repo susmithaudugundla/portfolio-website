@@ -18,8 +18,8 @@
     <script src="https://tap.ibhubs.in/utils/console.js"></script>
     <div class="justify-content-center">
       <label for="selectingTheme" style="color:white">Select your favourite colors</label>
-      <input type="color" name="favcolor" id="favcolor1" value="#8833e8" />
-      <input type="color" name="favcolor" id="favcolor2" value="#33e8a3" />
+      <input type="color" name="favcolor" id="favcolor1" value="#ffffff" />
+      <input type="color" name="favcolor" id="favcolor2" value="#000000" />
     </div>
     <div class="container">
       <form class="flex-container" onsubmit="consoleUserDetails(event)" oninput="x.value=parseInt(a.value)">
@@ -30,22 +30,22 @@
         </div>
         <div class="container">
           <div class="flex-container-row">
-            <div class="margin-between fname">
-              <input type="text" class="form-control" id="fname" name="fname" pattern="^[A-Za-z]+$" placeholder="First Name" required/>
-              <p id="fnameRequired"></p>
+            <div class="margin-between firstname">
+              <input type="text" class="form-control" id="firstname" name="firstname" pattern="^[A-Za-z]+$" placeholder="First Name" required/>
+              <p id="firstnameRequired"></p>
             </div>
-            <div class="lname">
-              <input type="text " class="form-control " id="lname" name="lname " placeholder="Last Name" pattern="^[A-Za-z]+$" required/>
-              <p id="lnameRequired"></p>
+            <div class="lastname">
+              <input type="text " class="form-control " id="lastname" name="lastname " placeholder="Last Name" pattern="^[A-Za-z]+$" required/>
+              <p id="lastnameRequired"></p>
             </div>
           </div>
           <input type="number " class="form-control " name="number " id="number" pattern="^[6789][0-9]{9}$" placeholder="Mobile Number" required />
           <p id="numberRequired"></p>
           <input type="email " class="form-control " name="email " id="mail" placeholder="Email" required/>
           <p id="mailRequired"></p>
-          <input type="password" class="form-control " name="password " placeholder="Password" id="password" pattern="^.*[A-Z].*[a-z].*$" required/>
+          <input type="password" class="form-control " name="password " placeholder="Password" id="password" pattern="(?=.*[A-Z])(?=.*[a-z]).*" required/>
           <p id="passwordRequired"></p>
-          <input type="password" class="form-control " name="confirmPassword " id="confirmPassword" placeholder="Confirm Password" pattern=".*[A-Za-z].*" required/>
+          <input type="password" class="form-control " name="confirmPassword " id="confirmPassword" placeholder="Confirm Password" pattern="(?=.*[A-Z])(?=.*[a-z]).*" required/>
           <p id="confirmPasswordRequired"></p>
           <div class="flex-container-row">
             <label for="selectYourGender">Select your gender</label>
@@ -84,7 +84,7 @@
           </div>
           <div class="flex-container-row form-group">
             <label for="typingspeed">Set your typing speed</label>
-            <input type="range" id="a" name="a" value="50" style="flex-grow:1">
+            <input type="range" id="typingRange" name="a" value="50" style="flex-grow:1">
             <output name="x" for="a b"></output>
           </div>
           <div class="flex-container-row">
@@ -95,12 +95,14 @@
             </div>
           </div>
           <div style="text-align:center">
-            <button class="btn info" id="submitButton">Sign Up</button>
+            <button class="btn info button" id="submitButton">Sign Up</button>
           </div>
       </form>
       </div>
-    </div>
-    <script src="sign-up.js"></script>
+      <div class="justify-content-center">
+        <p style="color:white;font-size:18px">Already have an account? <a>Login here</a></p>
+      </div>
+      <script src="sign-up.js"></script>
   </body>
 
 </html>

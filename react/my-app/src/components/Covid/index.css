@@ -1,0 +1,13 @@
+.card{
+	height:200px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+img{
+	width:100%;
+}
+.country{
+	width:200px;
+	margin: 10px;
+}

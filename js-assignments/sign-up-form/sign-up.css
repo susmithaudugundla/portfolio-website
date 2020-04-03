@@ -18,8 +18,14 @@
 	margin-right: 15px;
 }
 
-.fname,
-.lname {
+.form-control:focus {
+	border-color: red;
+	box-shadow: none;
+}
+
+
+.firstname,
+.lastname {
 	flex-grow: 1;
 }
 
@@ -29,12 +35,16 @@ p {
 }
 
 body {
-	background-image: linear-gradient(90deg, #8833e8, #33e8a3);
+	background-image: linear-gradient(90deg, #ffffff, #000000);
+	margin-bottom: 10px
 }
 
 form {
 	background-color: white;
-	margin-bottom: 30px;
+}
+
+.button {
+	width: 200px;
 }
 
 .btn {

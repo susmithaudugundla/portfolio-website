@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+	</head>
+
+	<body>
+		<div id="console-root"></div>
+		<script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+		<!--<script type="text/javascript">
+			try {
+				{
+					let count = 5;
+				}
+				console.log(count);
+			}
+			catch (error) {
+				console.log("error");
+			}
+		</script>-->
+		<!--<script type="text/javascript">
+			try {
+				function somethin() {
+					let count = 0;
+					if (true) {
+						let anotherCount = 0;
+						console.log("this is if block");
+					}
+					console.log(anotherCount);
+				}
+				somethin();
+			}
+			catch (err) {
+				console.log(err);
+			}
+		</script>-->
+		<!--<script type="text/javascript">
+			function counter() {
+				const count = 0;
+				count = count + 1;
+				console.log(count);
+			}
+			try {
+				counter();
+			}
+			catch (err) {
+				console.log(err);
+			}
+		</script>-->
+		<!--<script type="text/javascript">
+			let name = ["john", "jack"];
+
+			function names() {
+				for (var i = 0; i < name.length; i++) {
+					console.log(name[i]);
+				}
+				console.log(i);
+			}
+			names();
+		</script>-->
+		<!--<script type="text/javascript">
+			try {
+				let person;
+				console.log(person);
+				person = "jack";
+			}
+			catch (err) {
+				console.log(err);
+			}
+		</script>-->
+		<!--<script type="text/javascript">
+			const name = "john";
+		</script>
+		<script type="text/javascript">
+			console.log(name);
+		</script>-->
+		<!--<script type="text/javascript">
+			let name = "Jack";
+			console.log(name);
+			let anotherName = name;
+			console.log(anotherName);
+			name = "John";
+			console.log(name)
+			console.log(anotherName);
+		</script>-->
+		<!--<script type="text/javascript">
+			let person = {
+				name: "jack",
+				place: "dmm"
+			};
+
+			function change(person) {
+				person.place = "kadapa";
+			}
+			change(person);
+			console.log(person);
+		</script>-->
+		<!--<script type="text/javascript">
+			let hobbies = ["coding", "reading", "singing"];
+			let myHobbies = hobbies;
+			hobbies.push("dancing");
+			console.log(hobbies);
+			console.log(myHobbies);
+		</script>-->
+		<!--<script type="text/javascript">
+			let person = {
+				name: "jack",
+				place: "dmm"
+			};
+
+			function create(person) {
+				let second = {};
+				for (let key in person) {
+					second[key] = person[key];
+				}
+				second.place = "kadapa";
+				return second;
+			}
+			let second = create(person);
+			console.log(person);
+			console.log(second);
+		</script>-->
+		<!--<script type="text/javascript">
+			let person = {
+				name: "jack",
+				place: "dmm"
+			};
+			console.log(person);
+			let second = Object.assign({}, person);
+			console.log(second);
+			person.place = "kadapa";
+			console.log(person);
+			console.log(second);
+		</script>-->
+		<!--<script type="text/javascript">
+			let hobbies = ["coding", "reading", "singing", "cricket"];
+			console.log(hobbies);
+			hobbies.slice(0, 2);
+			console.log(hobbies);
+		</script>-->
+		<!--<script type="text/javascript">
+			let names = ["jack", "john"];
+
+			function print() {
+				for (const i = 0; i < names.length; i++) {
+					console.log(names[i]);
+				}
+			}
+			print();
+		</script>-->
+		<script type="text/javascript">
+			let person = {
+				name: "jack",
+				place: "dmm",
+				hobbies: ["singing", "cricket"]
+			};
+			console.log(person);
+			let second = Object.assign({}, person);
+			console.log(second);
+			person.hobbies.push("coding");
+			console.log(person);
+			console.log(second);
+		</script>
+	</body>
+
+</html>

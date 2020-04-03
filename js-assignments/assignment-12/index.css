@@ -1,0 +1,53 @@
+button,
+input {
+	width: 40%;
+	height: 40px;
+	margin: 20px;
+}
+
+div {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.input {
+	width: 40%;
+	display: block;
+}
+
+.input input {
+	width: 100%;
+	margin: 10px;
+}
+
+.deposit-division,
+.withdraw-division,
+.show-balance-division,
+.history-division {
+	display: none;
+
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
+
+table {
+	width: 90%;
+}
+
+.input p {
+	color: red
+}
+
+button:hover {
+	background-color: blue;
+}

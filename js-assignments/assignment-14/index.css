@@ -1,0 +1,44 @@
+.flexbox {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.add-car {
+	align-self: flex-end;
+	background-color: blue;
+	color: white
+}
+
+
+p {
+	margin: 10px;
+}
+
+button {
+	height: 40px;
+	width: 100px;
+	margin: 20px;
+	border-radius: 10px;
+	border: 0px solid black;
+}
+
+.deccelerator {
+	border: 1px solid red;
+	color: red;
+}
+
+.accelerator {
+	border: 1px solid blue;
+	color: blue;
+}
+
+.start {
+	background: green;
+	color: white;
+	margin-right: 65%
+}
+
+.fa-close {
+	font-size: 24px
+}

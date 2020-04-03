@@ -1,0 +1,13 @@
+button {
+	height: 40px;
+	width: 100px;
+	margin: 20px;
+}
+
+.deccelerator {}
+
+.accelerator {}
+
+.start {
+	background: green;
+}

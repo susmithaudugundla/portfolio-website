@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style type="text/css">
+		ul {
+			padding: 0px;
+			background-color: white;
+			list-style: none;
+			width: 80%;
+			}
+			li {
+					border:1px solid black;
+				display:flex;
+				flex-direction:row;
+			align-items: center;
+			height: auto;
+			color: #4d4d4d;
+			margin: 5px;
+			font-size: 24px;
+			border-bottom: 1px solid #e1e1e1;
+		}
+		
+		.text-decoration-none{
+			text-decoration: none;
+		}
+		
+		
+		.text-decoration-strike{
+			text-decoration: over-line;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<h1>todo list</h1>
+	<div id="root"></div>
+	<div id="console-root"></div>
+    
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="todo-react.js"></script>
+	
+</body>
+</html>

@@ -1,144 +1,190 @@
-let alphaPattern = "^[A-Za-z]+$";
-let numberPattern = "^[6789][0-9]{9}$"
+let namePattern = "^[A-Za-z]+$";
+let numberPattern = "^[6789][0-9]{9}$";
 let gmailPattern = "(@gmail.com)$";
-let passwordPattern1 = "^.*[A-Z].*$";
-let passwordPattern2 = "^.*[a-z].*$";
+let passwordPattern = "(?=.*[A-Z])(?=.*[a-z]).*";
 let userDetails = {};
+let favColor1Element = document.getElementById("favcolor1");
+let favColor2Element = document.getElementById("favcolor2");
+let firstnameElement = document.getElementById("firstname");
+let lastnameElement = document.getElementById("lastname");
+let mobileNumberElement = document.getElementById("number");
+let gmailElement = document.getElementById("mail");
+let passwordElement = document.getElementById("password");
+let confirmPasswordElement = document.getElementById("confirmPassword");
+let genderElement = document.getElementsByName("gender");
+let dateElement = document.getElementById("date");
+let branchElement = document.getElementById("branch");
+let addressElement = document.getElementById("address");
+let typingRangeElement = document.getElementById("typingRange");
+let termsAndConditionsElement = document.getElementById("termsAndConditions");
+let firstnameRequiredElement = document.getElementById("firstnameRequired");
+let lastnameRequiredElement = document.getElementById("lastnameRequired");
+let numberRequiredElement = document.getElementById("numberRequired");
+let mailRequiredElement = document.getElementById("mailRequired");
+let passwordRequiredElement = document.getElementById("passwordRequired");
+let confirmPasswordRequiredElement = document.getElementById("confirmPasswordRequired");
+let dateRequiredElement = document.getElementById("dateRequired");
+let termsAndConditionsRequiredElement = document.getElementById("termsAndConditionsRequired");
+let requiredVariable = "* Required field";
+let invalidVariable = "Invalid value";
+let wrongInputFieldBorder = "1px solid red";
+let correctInputFieldBorder = "1px solid green";
 
-document.getElementById("favcolor2").onchange = () => {
+favColor1Element.onchange = function() { changeTheme() };
+favColor2Element.onchange = function() { changeTheme() };
 
-    let favColor1Element = document.getElementById("favcolor1").value;
-    let favColor2Element = document.getElementById("favcolor2").value;
-    document.body.style.backgroundImage = `linear-gradient(90deg,${favColor1Element},${favColor2Element})`;
+function changeTheme() {
+    document.body.style.backgroundImage = `linear-gradient(90deg,${favColor1Element.value},${favColor2Element.value})`;
+}
+
+firstnameElement.onfocus = () => {
+    firstnameRequiredElement.innerHTML = requiredVariable;
 };
-document.getElementById("favcolor1").onchange = () => {
-    let favColor1Element = document.getElementById("favcolor1").value;
-    let favColor2Element = document.getElementById("favcolor2").value;
-    document.body.style.backgroundImage = `linear-gradient(90deg,${favColor1Element},${favColor2Element})`;
+lastnameElement.onfocus = () => {
+    lastnameRequiredElement.innerHTML = requiredVariable;
+};
+mobileNumberElement.onfocus = () => {
+    numberRequiredElement.innerHTML = requiredVariable;
+};
+gmailElement.onfocus = () => {
+    mailRequiredElement.innerHTML = requiredVariable;
+};
+passwordElement.onfocus = () => {
+    passwordRequiredElement.innerHTML = requiredVariable;
+};
+confirmPasswordElement.onfocus = () => {
+    confirmPasswordRequiredElement.innerHTML = requiredVariable;
+};
+dateElement.onfocus = () => {
+    dateRequiredElement.innerHTML = requiredVariable;
 };
 
-document.getElementById("fname").onfocus = () => {
-    document.getElementById("fnameRequired").innerHTML = "* Required field";
+firstnameElement.oninput = function() { changeBorderColorAcoordingToGivenInputs(firstnameElement) };
+lastnameElement.oninput = function() { changeBorderColorAcoordingToGivenInputs(lastnameElement) };
 
-};
-document.getElementById("lname").onfocus = () => {
-    document.getElementById("lnameRequired").innerHTML = "* Required field";
+function changeBorderColorAcoordingToGivenInputs(currentFocusField) {
+    (!currentFocusField.value.match(namePattern)) ? changeWrongInputFieldBorder(currentFocusField): changeCorrectInputFieldBorder(currentFocusField);
+}
 
+mobileNumberElement.oninput = () => {
+    (!mobileNumberElement.value.match(numberPattern)) ? changeWrongInputFieldBorder(mobileNumberElement): changeCorrectInputFieldBorder(mobileNumberElement);
 };
-document.getElementById("number").onfocus = () => {
-    document.getElementById("numberRequired").innerHTML = "* Required field";
+gmailElement.oninput = () => {
+    (!gmailElement.value.match(gmailPattern)) ? changeWrongInputFieldBorder(gmailElement): changeCorrectInputFieldBorder(gmailElement);
+};
+passwordElement.oninput = () => {
+    (!passwordElement.value.match(passwordPattern)) ? changeWrongInputFieldBorder(passwordElement): changeCorrectInputFieldBorder(passwordElement);
+};
+confirmPasswordElement.oninput = () => {
+    (passwordElement.value !== confirmPasswordElement.value) ? changeWrongInputFieldBorder(confirmPasswordElement): changeCorrectInputFieldBorder(confirmPasswordElement);
+};
 
-};
-document.getElementById("mail").onfocus = () => {
-    document.getElementById("mailRequired").innerHTML = "* Required field";
-
-};
-document.getElementById("password").onfocus = () => {
-    document.getElementById("passwordRequired").innerHTML = "* Required field";
-
-};
-document.getElementById("confirmPassword").onfocus = () => {
-    document.getElementById("confirmPasswordRequired").innerHTML = "* Required field";
-
-};
-document.getElementById("date").onfocus = () => {
-    document.getElementById("dateRequired").innerHTML = "* Required field";
-
-};
-document.getElementById("fname").onblur = () => {
-    let fnameElement = document.getElementById("fname").value;
-    let matchingVariable = fnameElement.match(alphaPattern);
-    if (matchingVariable == null) {
-        alert("Invalid Value");
+firstnameElement.onblur = () => {
+    if (!firstnameElement.value.match(namePattern) && firstnameElement.value !== "") {
+        firstnameRequiredElement.innerHTML = invalidVariable;
     }
-    else {
-        userDetails["First Name"] = fnameElement;
-        document.getElementById("fnameRequired").innerHTML = "";
+    else if (firstnameElement.value !== "") {
+        appendUserDetails("First Name", firstnameElement.value);
+        firstnameRequiredElement.innerHTML = "";
     }
 };
-document.getElementById("lname").onblur = () => {
-    let lnameElement = document.getElementById("lname").value;
-    let matchingVariable = lnameElement.match(alphaPattern);
-    if (matchingVariable == null) {
-        alert("Invalid Value");
+lastnameElement.onblur = () => {
+    if (!lastnameElement.value.match(namePattern) && lastnameElement.value !== "") {
+        lastnameRequiredElement.innerHTML = invalidVariable;
     }
-    else {
-        userDetails["Last Name"] = lnameElement;
-        document.getElementById("lnameRequired").innerHTML = "";
+    else if (lastnameElement.value !== "") {
+        appendUserDetails("Last Name", lastnameElement.value);
+        lastnameRequiredElement.innerHTML = "";
     }
 };
-document.getElementById("number").onblur = () => {
-    let mobileNumberElement = document.getElementById("number").value;
-    let matchingVariable = mobileNumberElement.match(numberPattern);
-    if (matchingVariable == null) {
-        alert("Invalid Value");
+mobileNumberElement.onblur = () => {
+    if (!mobileNumberElement.value.match(numberPattern) && mobileNumberElement.value !== "") {
+        numberRequiredElement.innerHTML = invalidVariable;
     }
-    else {
-        userDetails["Mobile Number"] = mobileNumberElement;
-        document.getElementById("numberRequired").innerHTML = "";
+    else if (mobileNumberElement.value !== "") {
+        appendUserDetails("Mobile Number", mobileNumberElement.value);
+        numberRequiredElement.innerHTML = "";
     }
 };
-document.getElementById("mail").onblur = () => {
-    let gmailElement = document.getElementById("mail").value;
-    let matchingVariable = gmailElement.match(gmailPattern);
-    if (matchingVariable == null) {
-        alert("Invalid Value");
+gmailElement.onblur = () => {
+    if (!gmailElement.value.match(gmailPattern) && gmailElement.value !== "") {
+        mailRequiredElement.innerHTML = invalidVariable;
     }
-    else {
-        userDetails["Mail"] = gmailElement;
-        document.getElementById("mailRequired").innerHTML = "";
+    else if (gmailElement.value !== "") {
+        appendUserDetails("Mail Id", gmailElement.value);
+        mailRequiredElement.innerHTML = "";
     }
 };
-document.getElementById("password").onblur = () => {
-    let passwordElement = document.getElementById("password").value;
-    let matchingVariable1 = passwordElement.match(passwordPattern1);
-    let matchingVariable2 = passwordElement.match(passwordPattern2);
-    if (matchingVariable1 == null) {
-        alert("Invalid Value");
-    }
-    else if (matchingVariable2 == null) {
-        alert("Invalid Value");
-    }
-    else {
-        userDetails["Password"] = passwordElement;
-        document.getElementById("passwordRequired").innerHTML = "";
-    }
-};
-document.getElementById("confirmPassword").onblur = () => {
+passwordElement.onblur = () => {
     let confirmPasswordElement = document.getElementById("confirmPassword").value;
-    let passwordElement = document.getElementById("password").value;
-    if (passwordElement !== confirmPasswordElement) {
-        alert("Invalid Value");
-        confirmPasswordElement.innerHTML="";
+    if (!passwordElement.value.match(passwordPattern) && (passwordElement.value !== "")) {
+        passwordRequiredElement.innerHTML = invalidVariable;
     }
-    else {
-        document.getElementById("confirmPasswordRequired").innerHTML = "";
+    else if (passwordElement.value !== "") {
+        appendUserDetails("Password", passwordElement.value);
+        passwordRequiredElement.innerHTML = "";
+    }
+    if (passwordElement.value !== confirmPasswordElement && confirmPasswordElement !== "") {
+        confirmPasswordRequiredElement.innerHTML = "Password didn't match";
+        document.getElementById("confirmPassword").value = "";
+    }
+    else if (confirmPasswordElement !== "") {
+        confirmPasswordRequiredElement.innerHTML = "";
+    }
+
+};
+confirmPasswordElement.onblur = () => {
+    if (passwordElement.value !== confirmPasswordElement.value && confirmPasswordElement.value !== "") {
+        confirmPasswordRequiredElement.innerHTML = "Password didn't match";
+        confirmPasswordElement.value = "";
+    }
+    else if (confirmPasswordElement.value !== "") {
+        confirmPasswordRequiredElement.innerHTML = "";
     }
 };
-document.getElementById("date").onblur = () => {
-    let dateElement = document.getElementById("date").value;
+dateElement.onblur = () => {
     let minDate = "2002-01-01";
-    if (dateElement < minDate) {
-        alert("Invalid Value");
+    if (dateElement.value < minDate) {
+        dateRequiredElement.innerHTML = invalidVariable;
     }
     else {
-        userDetails["Date"] = dateElement;
-        document.getElementById("dateRequired").innerHTML = "";
+        appendUserDetails("Date Of Birth", dateElement.value);
+        dateRequiredElement.innerHTML = "";
     }
 };
+termsAndConditionsElement.onclick = () => {
+    if (termsAndConditionsElement.checked) {
+        termsAndConditionsRequiredElement.innerHTML = "";
+        appendUserDetails("Terms and Conditions", "True");
+    }
+    else {
+        termsAndConditionsRequiredElement.innerHTML = requiredVariable;
+    }
+};
+
+function changeWrongInputFieldBorder(currentFocusField) {
+    currentFocusField.style.border = wrongInputFieldBorder;
+}
+
+function changeCorrectInputFieldBorder(currentFocusField) {
+    currentFocusField.style.border = correctInputFieldBorder;
+}
 
 function consoleUserDetails(event) {
     alert("Submitted");
     event.preventDefault();
-    let genderElement = document.getElementsByName('gender');
     let i = 0;
     for (i = 0; i < genderElement.length; i++) {
         if (genderElement[i].checked)
             break;
     }
-    userDetails["Gender"] = genderElement[i].value;
-    userDetails["Branch"] = document.getElementById("branch").value;
-    userDetails["Address"] = document.getElementById("address").value;
-    userDetails["Typing speed"] = document.getElementById("a").value;
+    appendUserDetails("Gender", genderElement[i].value);
+    appendUserDetails("Branch", branchElement.value);
+    appendUserDetails("Address", addressElement.value);
+    appendUserDetails("Typing Speed", typingRangeElement.value);
     console.log(userDetails);
+}
+
+function appendUserDetails(key, value) {
+    userDetails[key] = value;
 }

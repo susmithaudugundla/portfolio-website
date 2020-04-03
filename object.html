@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style type="text/css">
+			img {
+				width: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="console-root"></div>
+		<script src="https://tap.ibhubs.in/utils/console.js"></script>
+		<script type="text/javascript">
+			(function f1(a){
+				console.log("first");
+			})
+		</script>
+		<script type="text/javascript">
+			let a=[1,2,3,4];
+			a.splice(1,1);
+			console.log(a);
+			console.log(a.length)
+		</script>
+		
+		<!--<script type="text/javascript">
+			let arr1 = "john".split("");
+			//alert(arr1);
+			let arr2 = arr1.reverse();
+			//alert(arr1);
+			let arr3 = "jones".split("");
+			//alert(arr1);
+			arr2.push(arr3);
+			alert(arr1[4]);
+			console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+			console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+		</script>-->
+		<!--<script type="text/javascript">
+			function person(gender, name, age) {
+				return {
+					name,
+					gender,
+					age
+				};
+			}
+			let malePerson = person("male", "rakshith", 20);
+			let femalePerson = person("female", "rakshitha", 15);
+			console.log(malePerson);
+			console.log(femalePerson);
+		</script>-->
+		<!--<script type="text/javascript">
+			function Person(name, age, gender) {
+				this.name = name;
+				this.age = age;
+				this.gender = gender;
+				this.draw = function() {
+					console.log("hii");
+				}
+			}
+			const person = new Person("Rakshith", 23, "male");
+			console.log(person);
+		</script>-->
+		<!--<script type="text/javascript">
+			let arr = [];
+			console.log(arr.constructor);
+			let obj = {};
+			console.log(obj.constructor);
+			let fun = function() {};
+			console.log(fun.constructor);
+			let str = "";
+			console.log(str.constructor);
+			let boolean = true;
+			console.log(boolean.constructor);
+			let num = 12;
+			console.log(num.constructor);
+		</script>-->
+		<!--<script type="text/javascript">
+			let car = {
+				name: "nano",
+				noOfTyres: 4,
+				start: function() {
+					console.log("started", this.name);
+				},
+				tyres: ['a', 'b', 'c', 'd'],
+				showTyresList: function() {
+				}
+			};
+			let tyre = new car.showTyresList();
+			console.log(tyre);
+		</script>-->
+		<!--<script type="text/javascript">
+			let car = {
+				name: "nano",
+				noOfTyres: 4,
+				start: function() {
+					console.log("started", this.name);
+				},
+				tyres: ['a', 'b', 'c', 'd'],
+				showTyresList: function() {
+					let self = this;
+					self.tyres.forEach(function some(item) {
+						console.log(`${item}: ${self.name}`);
+					});
+
+					/*for (let i = 0; i < 4; i++) {
+						console.log(`${car.tyres[i]}: ${car.name}`);
+					}*/
+				}
+			}
+			car.showTyresList();
+		</script>-->
+		<!--<script type="text/javascript">
+			let car = {
+				name: "nano",
+				noOfTyres: 4,
+				start: function() {
+					console.log("started", this.name);
+				},
+				tyres: ['a', 'b', 'c', 'd'],
+				showTyresList: function() {
+					let self = this;
+					self.tyres.forEach(function some(item) {
+						console.log(`${item}: ${this.brand}`);
+					}, { brand: "Suzuki" });
+				}
+			}
+			car.showTyresList();
+		</script>-->
+		<!--<script type="text/javascript">
+			let car = {
+				name: "nano",
+				noOfTyres: 4,
+				start: function() {
+					console.log("started", this.name);
+				},
+				tyres: ['a', 'b', 'c', 'd'],
+				showTyresList: function() {
+					let self = this;
+					self.tyres.forEach(function some(item) {
+						console.log(`${item}: ${this.name}`);
+					}.bind(car));
+				}
+			};
+			car.showTyresList();
+		</script>-->
+		<!--<script type="text/javascript">
+			let car = {
+				name: "nano",
+				noOfTyres: 4,
+				start: function() {
+					console.log("started", this.name);
+				},
+				tyres: ['a', 'b', 'c', 'd'],
+				showTyresList: function() {
+					let self = this;
+					self.tyres.forEach(item => {
+						console.log(`${item}: ${this.name}`);
+					});
+				}
+			};
+			car.showTyresList();
+		</script>-->
+		<!--<script type="text/javascript">
+			let createPerson = function() {
+				this.gender = "male";
+				/*return {
+					firstName: "Ram",
+					lastName: "Guptha",
+					fullname: function() {
+						return this.firstName + this.lastName;
+					}
+				};*/
+			};
+
+			function Person() {
+
+				this.name = "Ram";
+				this.lastName = "Guptha";
+				this.fullname = function() {
+					return this.firstName + this.lastName;
+				}
+
+			}
+			let personOne = new createPerson();
+			console.log(personOne);
+			let personTwo = new Person();
+			console.log(personTwo);
+		</script>-->
+		<!--<script type="text/javascript">
+			class parent {
+				constructor() {
+					this.paret = "parent";
+				}
+			}
+			class ClassRoomES6 extends parent {
+				constructor(roomNumber, studentsStrength) {
+					super();
+					this.roomNumber = roomNumber;
+					this.studentsStrength = studentsStrength;
+				}
+				switchingOnPowerEquipment() {
+
+					this.roomNumber = 5;
+				}
+				static sayHello() {
+					console.log("hello");
+				}
+			}
+
+			let object = new ClassRoomES6(3, 56);
+			console.log(object.paret);
+			console.log(ClassRoomES6.sayHello())
+			//object.sayHello();
+		</script>-->
+		<!--<script type="text/javascript">
+			class Account {
+				constructor() {
+					this.name = "account name";
+					this.branchName = "branch name";
+					this.accountNumber = "account number";
+					this.ifscCode = "ifsc code";
+				}
+			}
+			class SavingsAccount {
+				constructor() {
+					this.balance = "balance";
+					this.interestRate = "interest rate";
+				}
+			}
+			class CurrentAccount extends SavingsAccount {
+				constructor() {
+					super();
+					this.overDraftAmount = "over draft amount";
+				}
+			}
+			class LoanAccount {
+				constructor() {
+					this.loanAmount = "loan amount";
+					this.loanDuration = "loan duration";
+				}
+			}
+			let object = new CurrentAccount();
+			console.log(object);
+		</script>-->
+		<!--<script type="text/javascript">
+			let object = {
+				name: "some",
+				age: 20,
+				address: "DMM"
+			}
+			let text = JSON.stringify(object);
+			console.log(typeof text);
+			console.log(JSON.parse(text));
+		</script>-->
+		<!--<script type="text/javascript">
+			function Person(firstName, lastName) {
+				this.firstName = firstName;
+				this.lastName = lastName;
+			}
+			Person.getFullName = function() {
+				return this.firstName;
+			}
+			console.log(Person.getFullName)
+			let member = new Person("hii", "hello");
+			let m2 = new Person("lidiw", "sme");
+			m2.getFullName = function() {
+				return this.firstName;
+			}
+			console.log(m2.getFullName());
+		</script>-->
+		<!--<script type="text/javascript">
+			class Person {
+				constructor(firstName, lastName) {
+					this.firstName = firstName;
+					this.lastName = lastName;
+				}
+				static getFullName() {
+					console.log(Person)
+					return this.firstName;
+				}
+			}
+			//console.log(Person.getFullName());
+			let m1 = new Person("hello", "hii");
+			m1.getFullName = function() {
+				console.log("member");
+				return this.firstName;
+			}
+			console.log(b);
+			//let b = 5;
+			console.log(m1.getFullName());
+			//console.log(m1.getFullName());
+			//Person.firstName = "override";
+			//Person.lastName = "over";
+			//console.log(Person.getFullName());
+			//console.log(Person)
+		</script>-->
+		<!--<script type="text/javascript">
+			console.log("first");
+			setTimeout(() => {
+				console.log("time");
+			}, );
+			console.log("second");
+			console.log("third");
+		</script>-->
+		<!--<script type="text/javascript">
+			console.log("first");
+			let ud = get();
+			console.log(ud);
+			console.log("last");
+			
+			function get() {
+				setTimeout(() => {
+					console.log("function");
+				}, 5000);
+			}
+		</script>-->
+		<!--<script type="text/javascript">
+			console.log("first");
+			let user;
+			get(1, function(user) {
+				console.log(user);
+			});
+			console.log("last");
+
+			function get(id, callback) {
+				setTimeout(() => {
+					console.log("function");
+					callback({ id: id, username: "jack" });
+				}, 2000);
+			}
+		</script>-->
+		<!--<div id="image">
+
+		</div>
+		<script type="text/javascript">
+			let image = document.createElement("img");
+
+			image.onload = () => {
+				document.getElementById("image").appendChild(image);
+				console.log("First image is loaded");
+			}
+
+			setTimeout(() => {
+				image.setAttribute("src", "assignment-13/assets/android.png");
+			}, 2000);
+		</script>
+		<!--<script type="text/javascript">
+			/*let image = document.createElement("img");
+						setTimeout(() => {
+							image.setAttribute("src", "assignment-13/assets/android.png");
+						}, 2000);
+						document.getElementById("image").appendChild(image)
+						image.onload = () => {
+							console.log("image1 is loaded");
+						}*/
+			let image2 = document.createElement("img");
+			image2.setAttribute("src", "assignment-13/assets/amphp.png");
+			document.getElementById("image").appendChild(image2)
+			image2.onload = () => {
+				console.log("image2 is loaded");
+			}
+			let image3 = document.createElement("img");
+			image3.setAttribute("src", "assignment-13/assets/angular.png");
+			document.getElementById("image").appendChild(image3);
+			image3.onload = () => {
+				console.log("image3 is loaded");
+			}
+
+			//for(let i=0;i<3;i++){
+			functionCall(function() {
+				console.log("image1 loaded");
+			});
+			functionCall2(function() {
+			    console.log("image2 is loaded");
+			})
+			function functionCall(callback) {
+				setTimeout(() => {
+					let image = document.createElement("img");
+					image.setAttribute("src", "assignment-13/assets/android.png");
+					document.getElementById("image").appendChild(image)
+					callback();
+				}, 2000);
+			}
+			function functionCall2(callback) {
+				setTimeout(() => {
+					let image = document.createElement("img");
+					image.setAttribute("src", "assignment-13/assets/android.png");
+					document.getElementById("image").appendChild(image)
+					callback();
+				}, 2000);
+			}
+			
+			//}
+		</script>-->
+
+	</body>
+
+</html>

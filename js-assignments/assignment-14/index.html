@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cars Fleet</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <div class="flexbox">
+      <button class="add-car" id="addCar">Add car</button>
+      <div class="flexbox" id="division">
+        <div class="flexbox" id="carDivision">
+          <div>
+            <button class="start" id="start">Start</button>
+            <i class="fa fa-close" id="close"></i>
+          </div>
+          <p>Status:<span id="carStatus">Stopped</span></p>
+          <div>
+            <button class="accelerator" id="accelerator" disabled>Accelerator</button>
+            <button class="deccelerator" id="deccelerator" disabled>Deccelerator</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <script src="index.js"></script>
+  </body>
+
+</html>

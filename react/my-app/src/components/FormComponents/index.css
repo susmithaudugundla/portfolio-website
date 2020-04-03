@@ -1,0 +1,41 @@
+.back-division{
+	margin-top: 10px;
+	width:100%;
+	height:50px;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.greeting-division{
+	width:100%;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	height:100px;
+}
+.dessert-division{
+	width:100%;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	height:300px;
+}
+.margin{
+	margin:5px;
+}
+select{
+	height:50px;
+	width:200px;
+}
+
+.disable-division{
+	margin:30px;
+}
+.disable-division button{
+	height:30px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style type="text/css">
+			/*.first {
+				height: 100px;
+				width: 100px;
+				margin: 150px;
+				transition: transform 0.9s;
+				background-color: green;
+				/*transition: width 1s linear 1s;
+				transition-property: width, height;
+				transition-timing-function: ease-in-out;
+				transition-duration: 1s;
+				position: absolute;
+
+			}
+
+			.another {
+				height: 100px;
+				width: 100px;
+				margin: 150px;
+				border-radius: 5px 50%;
+				transition: transform 0.5s;
+				transform-origin: right bottom;
+				position: absolute;
+				background-color: yellowgreen;
+			}
+
+			.active {
+				/*height: 100px;
+				width: 400px;
+				background-color: yellowgreen;
+				transform: rotate(450deg);
+				/*transform: scale(3, 3);
+				/*transform: rotate(20000deg);
+				/*transform: translate(20px, 20px);
+				transform: skew(-20deg);*/
+
+			/*transform: rotate(1000deg) scale(2) translate(50%) skew(-20deg);
+			}*/
+
+			.flex div {
+				height: 100px;
+				width: 100px;
+			}
+
+			.red {
+				background: red;
+				transition: 1s;
+				transform-origin: left top;
+			}
+
+			.yellow {
+				background: yellow;
+				transition: 1s;
+				transform-origin: right top;
+			}
+
+			.blue {
+				background: blue;
+				transition: 1s;
+				transform-origin: left bottom;
+			}
+
+			.green {
+				background: green;
+				transition: 1s;
+				transform-origin: right bottom;
+
+			}
+
+			.flex {
+				display: flex;
+			}
+
+			.big {
+				margin: 100px;
+				position: absolute;
+			}
+
+			p {
+				margin: 100px;
+				position: absolute;
+				height: 200px;
+				width: 200px;
+			}
+
+			.active {
+				transform: rotate(90deg);
+			}
+
+			.active-reverse {
+				transform: rotate(-90deg);
+			}
+
+			.flex-center {
+				margin: 100px;
+				position: absolute;
+				height: 200px;
+				width: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<div class="first" id="division">
+
+		</div>
+		<div class="another" id="div"></div>-->
+		<div class="flex-center">
+			<p>Hii</p>
+		</div>
+
+		<div class="big" id="big">
+			<div class="flex">
+				<div id="red" class="red">
+
+				</div>
+				<div id="yellow" class="yellow">
+
+				</div>
+			</div>
+			<div class="flex">
+				<div id="blue" class="blue">
+
+				</div>
+				<div id="green" class="green">
+
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			const transitionEl = document.getElementById("big");
+			transitionEl.ontouchstart = () => {
+				document.getElementById("red").classList.add('active');
+				document.getElementById("green").classList.add('active');
+				document.getElementById("blue").classList.add('active-reverse');
+				document.getElementById("yellow").classList.add('active-reverse');
+			}
+			transitionEl.ontouchend = () => {
+				document.getElementById("red").classList.remove('active');
+				document.getElementById("green").classList.remove('active');
+				document.getElementById("blue").classList.remove('active-reverse');
+				document.getElementById("yellow").classList.remove('active-reverse');
+			}
+		</script>
+	</body>
+
+</html>
